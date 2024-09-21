@@ -1,0 +1,5 @@
+# Binary
+*.pdf
+
+# MacOS
+.DS_Store
