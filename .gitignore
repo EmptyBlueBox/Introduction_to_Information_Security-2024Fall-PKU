@@ -1,5 +1,7 @@
 # Binary
 *.pdf
+*.ppt
+*.pptx
 
 # MacOS
 .DS_Store
