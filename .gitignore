@@ -4,5 +4,8 @@
 *.ppt
 *.pptx
 
+# Exempted Files
+!Homework/**/参考答案/**
+
 # MacOS
 .DS_Store
