@@ -1,0 +1,149 @@
+
+body, html {height:auto;}
+body, div.topGlobalLinks {min-width:0;}
+.navigationPane {display:none;}
+.contentPane {margin:0 14px;}
+
+/* assessments.css*/
+.questionDiv .submission_text,
+.completionContainer,
+.completionContainerLarge,
+
+/* blogs.css */
+.blogEntry h4,
+.blogEntry .entryText,
+.blogContainer .entryComments li p,
+.journalNav ul li,
+
+/* calendar.css */
+.calMonth,
+.calMonth table thead th,
+.calMonth table tbody td,
+.calMonth table td div,
+
+/* controls.css */
+.modeSwitch,
+.listCm .courseMenu a.cmimg, .buttonCm .courseMenu a.cmimg, .portlet a.cmimg,
+a.cmimg-small,
+.fileInputWrapper,
+
+/* data_collection.css */
+.field, .noLabelField,
+.liveArea .stepcontent textarea,
+.buttonLibrary,
+.previewTextArea,
+
+/* discussion_board.css */
+.rating li a:hover,
+.dbThreadTree,
+
+/* dynamic_elements.css */
+.nav .sub ul li a, .cmdiv a, .menumini a,
+.timediv ul,
+.currentTags,
+.auto_complete ul li,
+.lb-wrapper,
+.lb-wrapper .lb-header h2,
+.lb-wrapper .lb-content,
+.myPlacesContent,
+.myavatar,
+
+/* gradebook.css */
+.bubble ul, .bubble .detailComments,
+.gradeDetailsStep,
+
+/* inventory_tables.css */
+.tableOverflowControl,
+.inventory,
+
+/* layout.css */
+.brandingImgWrap,
+
+/* list.css */
+.announcementList .item, .announcementList-read .item, #announcementList .item,
+.contentList .details,
+.contentListPlain .contentListRight + .details, 
+.announcementList .details, #announcementList .details,
+.datalistScroll,
+.landingPageColumn ul li ul.datalistScroll,
+.panelNested,
+.module,
+.moduleHeading,
+
+/* modules.css */
+.collapsible,
+.imgWrapper,
+.scroll_div,
+.eudModule .eudModule-inner, .styledModule-dark .module-inner,
+.portlet  .itemGroups li,
+.portlet ul.hierarchyList li,
+
+/* page_components.css */
+.customBanner,
+.loggedInAs,
+#loggedInUserName,
+.topTabs .hotItems ul.hotLinks,
+.cmImg,
+.itemTray .cartTableWrapper,
+.sideTOC .cartTableWrapper,
+.itemIconHolder a,
+.itemInfo .title,
+.itemInfo .high,
+.tocTreeWrapper,
+.sideTOC .tocTreeWrapper,
+
+/* palettes.css */
+.navPaletteContent a,
+.listCm .courseMenu h3,
+.buttonCm .courseMenu a,
+.expTreeContainer,
+.listCm .treeContainer .tree,
+.buttonCm .treeContainer .tree,
+.treeContainer .tree  li h4 + ul,
+#pickerPalette .tree > li,
+.treeScrollable,
+
+/* reports.css */
+#logDetail,
+.table-scroll-wrapper,
+
+/* rubrics.css */
+.gridOverflowControl,
+
+/* temporary.css (as of SP6) */
+.gradeItemsWrapper,
+.gradeSide .tocTreeWrapper,
+div ul li div.collabComments,
+div.comments div div.collabComments,
+div.studentGradesCommentPreview,
+div.grdDetEditTabCommentPreview,
+div.grdDetHistTabCommentPreview,
+
+/* utilities.css */
+.u_scrollPanel-vertical,
+
+/* /docs/ui/styles/grid.css */
+.currentScore,
+
+/* /docs/ui/styles/gradebook2.css */
+.gbContainer,
+.gbtable div, .gbtable_header div,
+.gc_info ul,
+.gblist li,
+.gblist li span,
+.cumulativeSelectItems .selected_items .itemList,
+.flynav ul,
+.overrow div,
+.weightField,
+.criteriaItem
+
+{
+  overflow:visible!important;
+	height:auto!important;
+  max-height:none!important;
+}
+
+div.locationPane
+{
+  display: block;
+}

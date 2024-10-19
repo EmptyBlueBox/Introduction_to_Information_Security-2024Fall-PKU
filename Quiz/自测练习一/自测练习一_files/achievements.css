@@ -1,0 +1,824 @@
+/* start quick content styles -- to be moved to core styling */
+
+#headerForm {
+    display: inline-block;
+}
+
+#headerForm .title-input {
+    font-size: 17px;
+    font-weight: normal;
+    vertical-align: 2px;
+}
+
+#headerForm .colorChipName {
+    display: none !important;
+}
+
+#headerForm .reqfield {
+    float: none;
+    font-size: 10px;
+    display: inline;
+    padding: 0;
+    position: relative;
+    right: 16px;
+}
+
+.mapTabs {
+    background: none;
+    box-shadow: none;
+    border: none;
+    margin-top: 10px;
+    height: 17px;
+}
+.mapTabs ul.containerTabs {
+    position: absolute;
+}
+.mapTabs ul li.active h3 {
+    background: none;
+    padding: 8px 14px 14px;
+    border: none;
+}
+.mapTabs ul li:first-child h3 {
+    padding-left: 30px;
+}
+.mapTabs ul li.active:last-child h3 {
+    border: none;
+}
+.mapTabs ul li a {
+    color: #666;
+    padding: 8px 14px 14px;
+    border: none;
+}
+
+.mapTabs ul li.active h3:before,
+.mapTabs ul li.active h3:after {
+    border-bottom-color: white;
+}
+
+.mapTabs a.complete {
+    background: none;
+    padding-right: 20px;
+}
+
+.mapTabs li:first-child a.complete {
+    background: none;
+    padding-left: 30px;
+}
+
+.mapTabs a.complete:before, .mapTabs li:first-child a.complete:before {
+    background: url("../images/checkmark-grayscale.png") no-repeat scroll 0 50% / 12px auto transparent;
+    bottom: 16px;
+    content: "";
+    height: 10px;
+    position: absolute;
+    right: 5px;
+    width: 12px;
+}
+
+.recipientWidget {
+	float:right;
+	border-left: 1px dotted #CCCCCC;
+    height: 40px;
+    padding: 2px 0 0 14px;
+    position: absolute;
+    right: 0;
+    top: 32px;
+    width: 14em;
+}
+
+.contextual-buttons {
+    background-color: #666666;
+    display: block;
+    font-family: "Lucida Grande",Arial,sans-serif;
+    font-style: normal;
+    font-size: 90%;
+    padding: 9px 0px;
+    margin: 10px -30px;
+    text-align: left;
+}
+
+.contextual-buttons a:first-child {
+    margin-left: 30px;
+}
+
+.contextual-buttons a {
+    color: #FFF;
+    margin-right: 15px;
+    padding-bottom: 1px;
+    border-bottom: 1px dotted #FFF;
+}
+
+.next {
+	padding: 10px 5px 10px 15px;
+	border-left: 1px solid #cccccc;
+	margin: 0 10px 0 20px;
+	font: italic 105%/1.4em Georgia, serif;
+	color: #444444;
+}
+
+/* end quick content styles -- to be moved to core styling */
+
+/* Start of Instructor Styles */
+
+/* Achivemente Creation Process - Define Triggers Page */
+
+.missingContent {
+	background-color: red;
+	display: block;
+    padding: 7px 0px;
+    margin-bottom: -11px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.missingContent p {
+	color: white;
+	margin-left: 30px;
+	font-family: "Lucida Grande",Arial,sans-serif;
+    font-style: normal;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.missingContent p a {
+	color: white;
+	margin-left: 10px;
+    padding-bottom: 1px;
+    border-bottom: 1px dotted #FFF;
+    cursor: pointer;
+}
+
+.multiselect {
+	margin: 0 0 2% 20%;
+}
+
+.multiselect hr {
+	border-top: 1px solid #aaaaaa;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	height: 3px;
+}
+
+th.remove {
+	width: 10%;
+}
+
+/* Achivement Creation Process - Select Reward Page - */
+
+.catalog-image-wrapper {
+	display: inline-block;
+}
+
+#customBadge
+{
+	background-repeat: no-repeat; 
+	background-position:center;
+}
+
+input.selectReward{
+	position: absolute;
+	left: -9999px;
+}
+
+label.selectReward {
+	display: inline-block;
+	width: 90px;
+	height: auto;
+	max-height: 90px;
+	border: 2px solid #eeeeee;
+	padding: 8px;
+	margin: 10px 15px 0 0;
+	border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+	transition: border 500ms;
+	-webkit-transition:border 500ms; /* Safari */
+}
+
+label.selectReward:hover{
+	border: 2px solid #cccccc;
+	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none;
+	transition: border 500ms, box-shadow: 500ms;
+	-webkit-transition:border 500ms, -webkit-box-shadow 500ms; /* Safari */
+}
+label.selectReward:active{
+	border: 2px solid #045A71;
+	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none;
+	transition: border 0s, box-shadow: 0s;
+	-webkit-transition:border 0s, -webkit-box-shadow 0s; /* Safari */
+}
+input.selectReward:checked + label.selectReward, input:checked.selectReward + label.selectReward{
+	border: 2px solid #0680A1;
+	box-shadow: 1px 1px 5px lightblue; -webkit-box-shadow: 1px 1px 5px lightblue; -moz-box-shadow: 1px 1px 5px lightblue;
+	transition: border 300ms, box-shadow 300mss;
+	-webkit-transition:border 300ms, -webkit-box-shadow 300ms; /* Safari */
+}
+
+label.selectReward span.selectReward, label.selectReward span.selectReward.Cert {
+	width: 90px;
+	height: 90px;
+	display: inline-block;
+}
+
+label.selectReward span.selectReward.Cert {
+	height: 54px;
+}
+
+.badgePreview {
+	background-color: #f5f5f5;
+	border: 1px solid #cccccc;
+	padding: 20px;
+}
+
+.badgePreview h2 {
+	border-bottom: 1px solid #cccccc;
+	margin: 0 0 1em;
+	padding: 0 0 10px 0;
+}
+
+.badgePreview li {
+	margin-bottom: 6px;
+    padding-bottom: 6px;
+}
+
+/* Certificate Styles  */
+
+.certificatePreview .locationPane, .certificatePreview  {
+	display: inline;
+}
+
+#certContainer {
+	background: #ffffff;
+	color: gray;
+	font-family: georgia, times, serif;
+	text-align:center;
+	margin: 0 0 20px 0;
+	padding: 10px 10px 20px;
+}
+
+.certificatePreview h1 {font-size:3.5em;margin: 0.1em 0 1em;border-bottom:1px inset #aaa;padding:10px;font-weight: normal;}
+.certificatePreview h2 {font-size:4em;margin:0.1em 0 0.5em;font-weight: normal;}
+.certificatePreview h3 {font-size:2em;margin:0.5em 0;font-weight: normal;}
+
+/* Certificate Styles - Green styles */
+
+#certContainer.green {
+	border: 3px double #009144;
+}
+
+.green h1, .green h2, .green h3 {
+	color: #009144;
+	font-family: georgia, times, serif;
+}
+
+.green p {
+	font-family: helvetica, arial, sans-serif;
+}
+
+/* Certificate Styles - Blue styles */
+
+#certContainer.blue {
+	border: 2px solid #0070bb;
+}
+
+.blue h1, .blue h2, .blue h3 {
+	color: #0070bb;
+	font-family: Trebuchet MS, sans-serif;
+}
+
+.blue p {
+	font-family: georgia, times, serif;
+	font-style: italic;
+}
+
+/* Certificate Styles - Orange styles */
+
+#certContainer.orange {
+	border: 7px double #f6921d;
+}
+
+.orange h1, .orange h2, .orange h3 {
+	color: #f6921d;
+}
+
+.orange p {
+	font-family: Trebuchet MS, sans-serif;
+}
+
+/* Certificate Styles - Print styles */
+
+@media print {
+	body.certificatePreview {background-image: none;background-color: white;border-top: none;}
+	body.certificatePreview .contentPaneWide {margin: 0;}
+	body.certificatePreview .contentBox {border-color: transparent;box-shadow: none;-webkit-box-shadow: none;-moz-box-shadow: none;}
+	body.certificatePreview .container {padding: 0;}
+	#certContainer {padding: 0;margin: 0; height: 9in;}
+	.certificatePreview .locationPane  h1 {font-size: 4em;}
+	.certificatePreview .locationPane  h2 {font-size: 5em;}
+	.certificatePreview .locationPane  h3 {font-size: 2em;}
+	a.genericButton {display: none;}
+	}
+
+/*  Achievement List Page - keeps thumbnail to correct size */
+.achievementList .item_icon {
+	width:50px;
+}
+
+/* End of Instructor Styles */
+
+/* Start of Student Styles */
+
+#achNotificationDiv {
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    color: white;
+    font-weight: normal;
+    background-color: #5E7D00;
+    margin: auto;
+    position: absolute;
+    z-index: 100;
+	border-radius: 0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px;
+    box-shadow: 1px 1px 10px #a0a0a0; -moz-box-shadow: 1px 1px 10px #a0a0a0; -webkit-box-shadow: 1px 1px 10xp #a0a0a0;
+	border: 1px solid #3C5B00;
+	border-top: none;
+}
+
+#achNotificationDiv b {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/* Student Achievements Page */
+
+.studentAchViewHeader {
+	height: 100px;
+	border-bottom: 1px solid #aaaaaa;
+	padding: 15px 15px 20px;
+	}
+
+.studentAchViewAvatar {
+	float: left;
+	width: 75px;
+	height: 75px;
+	background-color: white;
+	margin: 0 20px 0 0;
+	padding: 10px;
+	box-shadow: 1px 1px 3px #444; -moz-box-shadow: 1px 1px 3px #444; -webkit-box-shadow: 1px 1px 3xp #444;
+	border: 1px solid #efefef;
+}
+
+.studentAchViewAvatar img {
+	width: 75px;
+	height: 75px;
+}
+
+.studentAchViewUserName h2 {
+	color: #333333;
+	font-size: 26px;
+	font-weight:bold;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 0 0 0.2em;
+}
+
+.leaderboardTextSpan {
+	float: left;
+	min-width: 75px;
+	padding: 5px;
+	text-align: center;
+}
+
+.studentAchViewLeaderboardRank {
+	font-weight: bold;
+	float: left;
+	text-align: center;
+	padding: 5px;
+	color: white;
+	border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;
+	box-shadow: 1px 1px 3px lightblue; -webkit-box-shadow: 1px 1px 3px lightblue; -moz-box-shadow: 1px 1px 3px lightblue;
+	background: #008096;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwODA5NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDZiN2QiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #008096 0%, #006b7d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#008096), color-stop(100%,#006b7d));
+	background: -webkit-linear-gradient(top,  #008096 0%,#006b7d 100%);
+	background: -o-linear-gradient(top,  #008096 0%,#006b7d 100%);
+	background: -ms-linear-gradient(top,  #008096 0%,#006b7d 100%);
+	background: linear-gradient(to bottom,  #008096 0%,#006b7d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008096', endColorstr='#006b7d',GradientType=0 );
+}
+
+.selectedFilter {
+	background-color: rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(0, 0, 0, 0.13);
+	border-radius: 2px;
+	box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5), 1px 1px 7px rgba(0, 0, 0, 0.1) inset; -webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5), 1px 1px 7px rgba(0, 0, 0, 0.1) inset; -moz-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5), 1px 1px 7px rgba(0, 0, 0, 0.1) inset;
+	color: #333333;
+}
+
+.filterSpan {
+	float: left;
+	text-align: center;
+	width: 33%;
+    cursor: hand;
+    cursor: pointer;
+}
+
+.filterDiv {
+	clear: left;
+	display: table;
+	margin: auto;
+	line-height: 25px;
+	font-weight: normal;
+	padding: 20px 0 0 10px;
+	width: 75%;
+}
+
+/* Achievement Card Styles - earned box properties */
+.wrapper {
+		overflow: hidden;
+		padding: 13px 0 0 0;
+	}
+
+.corner-banner {
+	height: 23px;
+	width: 23px;
+	overflow: hidden;
+	position: absolute;
+	left: 3px;
+	top: 1px;
+	text-indent: -9999px;
+	background: url(../images/achieved.png) left top no-repeat transparent;
+	z-index: 100;
+}
+
+.achievementCardDiv {
+	width: 50%;
+	height: 135px;
+	position: relative;
+	float: left;
+}
+.achievement-inner {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	top: 10px;
+	bottom: 10px;
+	padding: 10px;
+}
+
+.achievementCardDiv .table {
+    display: block;
+	margin: 0 23px 0 0;
+}
+
+div.achievementCardImageExpanded  {
+	width: 92px;
+	height: 92px;
+	float: left;
+	overflow: hidden;
+	margin-right: 12px;
+}
+
+.achievementCardImageExpanded img {
+	width: 92px;
+	height: 92px;
+}
+
+.achievementCardImageExpanded img {
+	max-height: 90px;
+	height: auto;
+	border: 1px solid #aaaaaa;
+	width: 90px;
+	background-color: #ffffff;
+}
+
+img[src$="awardpinBadge.png"], img[src$="certificateBadge.png"], img[src$="checkBadge.png"], img[src$="medalBadge.png"], img[src$="starBadge.png"], img[src$="trophyBadge.png"], img[src$="orangeCertThumbnail.png"], img[src$="blueCertThumbnail.png"], img[src$="greenCertThumbnail.png"] {
+   border: 1px solid transparent;
+   background-color: transparent;
+}
+
+.achievementTitle {
+	font-size: 15px;
+	color: #333333;
+	padding: 0 0 5px;
+	margin: 0;
+	font-weight: bold;
+}
+
+.achievementDescription {
+	display: block;
+	font-size: 1em;
+	height: 1.2em;
+	line-height: 1.2em;
+	overflow: hidden;
+}
+
+.achievementDescription p  {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: block;
+	padding: 0 0 5px;
+}
+
+.achievementCardDiv .achievement-actions {
+	position: absolute;
+	right: 7px;
+	width: 5%;
+	max-width: 20px;
+	padding: 0 0 0 3px;
+	font-weight: bold;
+	min-height: 80px;
+	border-left: 1px solid #dddddd;
+	top: 10px;
+}
+
+a.achievementActionBadge, a.achievementActionRequirements, a.achievementActionPublish, a.achievementActionPrint {
+	background: url(../images/achActionDetails.png) left top no-repeat transparent;
+	float: right;
+	margin-bottom: 8px;
+	display: inline;
+	width: 16px;
+	height: 16px;
+	text-indent: -9999px;
+}
+
+a.achievementActionRequirements {
+	background: url(../images/achActionReq.png) left top no-repeat transparent;
+}
+
+a.achievementActionPublish {
+	background: url(../images/achActionShare.png) left top no-repeat transparent;
+}
+
+a.achievementActionPrint {
+	background: url(../images/achActionPrint.png) left top no-repeat transparent;
+}
+
+a.achievementActionBadge:hover, a.achievementActionRequirements:hover, a.achievementActionPublish:hover, a.achievementActionPrint:hover {
+	background-position: left bottom;
+}
+
+/* Unearned achivement styles */
+
+
+.achievementCardUnearned .achievementCardImageExpanded img {
+	opacity: 0.5;
+}
+
+.achievementCardEarned .achievement-inner {
+	opacity: 1.0;
+	border: 1px solid #0680A1;
+	border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+	box-shadow: 1px 1px 5px lightblue; -moz-box-shadow: 1px 1px 5px lightblue; -webkit-box-shadow: 1px 1px 5px lightblue;
+	background: rgb(245,245,245);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y1ZjVmNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZGRkZGQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(245,245,245,1) 0%, rgba(221,221,221,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,245,245,1)), color-stop(100%,rgba(221,221,221,1)));
+	background: -webkit-linear-gradient(top,  rgba(245,245,245,1) 0%,rgba(221,221,221,1) 100%);
+	background: -o-linear-gradient(top,  rgba(245,245,245,1) 0%,rgba(221,221,221,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(245,245,245,1) 0%,rgba(221,221,221,1) 100%);
+	background: linear-gradient(to bottom,  rgba(245,245,245,1) 0%,rgba(221,221,221,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#dddddd',GradientType=0 );
+}
+
+.achievementCardUnearned .achievement-inner{
+	opacity: 1.0;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+	box-shadow: 0px 0px 5px #DDDDDD inset; -moz-box-shadow: 0px 0px 5px #DDDDDD; -webkit-box-shadow: 0px 0px 5px #DDDDDD;
+}
+
+.achievementCardUnearned .achievementTitle,
+.achievementCardUnearned .achievementDescription {
+	color: #777;
+	font-weight: normal;
+}
+
+/* Responsive Styles for achievement cards */
+
+@media only screen and (max-width : 1199px) and (min-width : 481px) {
+	/* Tablet view: 2 tiles */
+	.achievementCardDiv {
+	width: 50%;
+	transition-property:width;
+	transition-duration:1s;
+	/* Safari */
+	-webkit-transition-property:width;
+	-webkit-transition-duration:1s;
+	}
+	.filterDiv {
+	width: 90%;
+	transition-property:width;
+	transition-duration:1s;
+	/* Safari */
+	-webkit-transition-property:width;
+	-webkit-transition-duration:1s;
+	}
+	}
+	@media only screen and (max-width : 1789px) and (min-width : 1200px) {
+	/* Small desktop / ipad view: 3 tiles */
+	.achievementCardDiv {
+	width: 33.3%;
+	transition-property:width;
+	transition-duration:1s;
+	/* Safari */
+	-webkit-transition-property:width;
+	-webkit-transition-duration:1s;
+	}
+	}
+	@media only screen and (max-width : 2490px) and (min-width : 1790px) {
+	/* Medium desktop: 4 tiles */
+	.achievementCardDiv {
+	width: 25%;
+	transition-property:width;
+	transition-duration:1s;
+	/* Safari */
+	-webkit-transition-property:width;
+	-webkit-transition-duration:1s;
+	}
+	}
+
+
+/* Requirement Lightbox */
+
+.lb-contentBox .content-lite {
+	border-right:1px solid #ccc;
+	display: table-cell;
+	padding: 20px;
+	width:  70%;
+	float: left;
+}
+
+.lb-contentBox .content-lite h2 {
+	background: none repeat scroll 0 0 #f0f0f0;
+    display: block;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-bottom: 10px;
+    padding: 4px 8px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) inset;
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) inset;
+	moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) inset;
+}
+
+table.ruleList {
+	display: table;
+	margin-top: 10px;
+}
+
+.arRule  .false, .arRule .true {
+	text-indent: -9999px;
+	width: 16px;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 3px 3px 3px 0;
+}
+
+.arRule .true {
+	background-image: url("../images/ruleTrue.png");
+}
+
+.arRule .ruleList {
+	color: #666666;
+}
+
+.arRule span.ruleType {
+	color:#333333;
+	font-weight: bold;
+}
+
+.lb-contentBox .achievement-actions {
+	display: table-cell;
+	padding:20px;
+	width: 30%;
+}
+
+.lb-contentBox .achievement-actions h2 {
+	display: block;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.lb-contentBox .achievement-actions a {
+	margin-bottom: 10px;
+}
+
+.tabDiv {
+	width: 2%;
+	display: inline-block;
+}
+
+/* Progress bar styles */
+
+.barchart-outer {
+    background: linear-gradient(to bottom, #FFFDF6 27%, #F9F6F1 100%) repeat scroll 0 0 transparent;
+    border: 1px solid #DEDBD3;
+    height: 25px;
+    padding: 1px;
+    position: relative;
+}
+
+.barchart-inner {
+    float: left;
+    height: 25px;
+    position: relative;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.barchart-inner.GradebookItemDueDate {
+    background: rgb(0,153,182);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwOTliNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwNzZkODgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(0,153,182,1) 0%, rgba(7,109,136,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,153,182,1)), color-stop(100%,rgba(7,109,136,1)));
+	background: -webkit-linear-gradient(top,  rgba(0,153,182,1) 0%,rgba(7,109,136,1) 100%);
+	background: -o-linear-gradient(top,  rgba(0,153,182,1) 0%,rgba(7,109,136,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(0,153,182,1) 0%,rgba(7,109,136,1) 100%);
+	background: linear-gradient(to bottom,  rgba(0,153,182,1) 0%,rgba(7,109,136,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0099b6', endColorstr='#076d88',GradientType=0 );
+}
+
+.barchart-inner.CourseLastAccess {
+    background: rgb(204,204,204);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NjY2NjYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhYWFhYWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(204,204,204,1) 0%, rgba(170,170,170,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,204,204,1)), color-stop(100%,rgba(170,170,170,1)));
+	background: -webkit-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(170,170,170,1) 100%);
+	background: -o-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(170,170,170,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(170,170,170,1) 100%);
+	background: linear-gradient(to bottom,  rgba(204,204,204,1) 0%,rgba(170,170,170,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#aaaaaa',GradientType=0 );
+}
+
+.barchart-inner .ruleCount {
+  	color: #FFFFFF;
+  	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  	font-size: 135%;
+  	font-weight: normal;
+  	letter-spacing: 0;
+  	line-height: 100%;
+  	opacity: 0.95;
+  	position: absolute;
+  	right: 5px;
+  	text-align: right;
+  	top: 3px;
+  	width: auto;
+}
+
+/* Achievement Detail Page */
+
+.ach-detail-left-column {
+	position: absolute;
+	width: 180px;
+}
+
+.badge-detail-image {
+	margin: 0 auto;
+	display: table;
+}
+
+.ach-detail-type {
+	font-style: italic;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.badge-detail-buttons {
+	text-align: center;
+}
+
+.badgeDetailButtonDiv {
+	text-align: center;
+}
+
+.dataDiv {
+	margin: 0 0 0 180px;
+
+}
+
+.dataDiv div {
+	vertical-align:top;
+}
+
+.ach-detail-right-column h2 {
+	border-bottom: 1px solid #aaaaaa;
+	padding: 0 0 5px 0;
+	margin: 1em 0 0.5em;
+}
+
+.badgeDetailTitle {
+	display: inline-block;
+	width: 25%;
+}
+
+.badgeDetailData {
+	display: inline-block;
+	width: 70%;
+}
+
+.vertical-break {
+	height: 10px;
+}

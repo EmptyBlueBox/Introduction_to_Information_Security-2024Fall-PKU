@@ -1,0 +1,584 @@
+.qShow{display: block}
+.qHide{display: none}
+.questionNumber, .questionType {
+  font-weight:bold;
+}
+.assess-stats .contentListRightOffset {
+  float: left;
+}
+
+.assess-stats .contentListRight {
+  position: static;
+  float: right;
+}
+
+.testOptions .noLabelField label, .field label {
+  display:inline-block;
+}
+
+.testOptions .noLabelField .fieldhelp {
+  margin-left:60px;
+}
+
+.testOptions .dataCheckbox,
+.testOptions .testAvailabilityDateRangePickerWrapper input[type="checkbox"] {
+  /* margin-right:40px; This introduces a really ugly big chunk of whitespace making this page look non-standard.  Leave the text visually associated with the checkbox. */
+}
+
+.testOptions .stepcontent ol li {
+  padding:10px 0;
+  border-bottom:1px solid #eee;
+}
+
+#userTestOptions li { /* Reduce extra whitespace inside the exceptions area */
+ padding: 0 0 0 0;
+}
+
+.testOptions .stepcontent ol li:last-child {
+  border-bottom:none;
+}
+
+.testOptions .timerColumnHide, .testOptions .optionsColumnHide, .testOptions .optionHide {
+  display: none;
+}
+
+
+.testOptions .timerWrapper {
+  display:block;
+  min-width:110px;
+}
+
+.testOptions .attemptTypeWrapper {
+  white-space:nowrap;
+}
+
+.testOptions .removeButton{
+	text-indent:-10000px;
+    display:block;
+    width:18px;
+    overflow:hidden;
+    height:18px;
+    background: url('../images/removeButton.png') no-repeat 0 0;
+    margin:0 10px;
+}
+.testOptions #userTestOptions_datatable th{
+	white-space:nowrap !important;
+}
+.testOptions #userTestOptions_datatable th > tr:first-child{
+	padding-left:10px;
+}
+.testOptions #userTestOptions_datatable tr:hover .removeButton,
+.testOptions .removeButton:focus{
+    background-position: 0 -18px;
+}
+
+.testOptions .presMode {
+  float:left;
+  min-width:320px;
+}
+
+.testOptions .presMode .fieldHelp {
+  margin-left:20px;
+}
+
+.testOptions .presMode .deliveryType {
+  margin-bottom: 6px;
+}
+
+.testOptions .presMode .deliveryType .fieldHelp {
+  margin-bottom: 0;
+}
+
+.testOptions .randomizeQuestions {
+  float:left;
+}
+
+.testOptions .u_indent {
+  margin-left:60px !important;
+}
+
+.testOptions .u_controlsWrapper .fieldhelp {
+  margin-left:0;
+}
+
+.questionShell, .quesTable {
+  border: 1px solid #CCCCCC;
+  margin-bottom: -1px;
+  width: 100%;
+}
+
+.questionShell td,
+.questionShell th {
+  padding: 3px;
+  vertical-align: top;
+}
+
+.questionShell th.labelCell,
+.questionShell .labelCell {
+  width: 17%;
+}
+
+.questionShell td.valueCell { width: 83% }
+
+.questionShell .correctAnswer { width: 2% }
+
+.questionShell .field {
+  margin: 0 0 12px;
+  padding:0 12px 12px 24px;
+  position: relative;
+  width: 95%;
+  float: none;
+}
+
+.takeQuestionDiv fieldset .legend-visible {
+   width: 100%;
+}
+
+.questionShell .field:last-child {border-bottom:none;}
+
+.questionShell .field img:first-child {
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.questionShell .field .vtbegenerated img {
+  top: auto;
+  left: auto;
+  position: relative;
+}
+
+.questionShell .vtbegenerated,
+.questionShell td.valueCell table .vtbegenerated { display: inline-block!important }
+
+.answer-label {
+  float: left;
+  margin: 5px 5px 5px 0;
+}
+
+.answer-table .answer-label {
+  margin-top: 0;
+}
+
+.answer-table th, .answer-table td {
+  vertical-align: top;
+}
+
+.relativeQuestionImageFormat {
+  position: relative !important;
+}
+
+.answer-table .u_floatThis-left .vtbegenerated p {
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+
+/*overiding overflow auto and hidden on these elements*/
+.inventory#userTestOptions_datatable {
+  overflow: visible;
+}
+.inventory#userTestOptions_datatable > tbody tr td,
+.inventory#userTestOptions_datatable > tbody tr th {
+  overflow: visible;
+}
+
+#userTestOptions .inventoryListTableContainerDiv {
+  overflow-x: visible;
+}
+
+.availabilityDatesEdit {
+  position: absolute;
+  z-index: 1000;
+  -webkit-box-shadow: 0 0 10px 4px rgba(0,0,0,.3);
+  -moz-box-shadow: 0 0 10px 4px rgba(0,0,0,.3);
+  box-shadow: 0 0 10px 4px rgba(0,0,0,.3);
+  border: 1px solid #999;
+  top: 21px;
+  right: 0;
+  padding: 16px 16px 9px;
+}
+
+.testOptions .availabilityDatesView {
+  position: relative;
+}
+.testOptions .availabilityDatesView .editButton {
+  vertical-align: top;
+}
+.testOptions .availabilityDatesView .dates {
+  padding: 0 6px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*BEGIN: Multiple Attempt - Test Retake UI*/
+.multipleAttempt, .multipleAttemptHelp, .attemptNavigation {
+	width:100%;
+	text-align:center;
+	padding:30px 0;}
+.multipleAttempt p, .multipleAttemptHelp p {
+	font-size:13px;
+	padding:0;}
+.attemptNavigation {
+	margin: 30px 0;}
+.attemptNavigation a{
+	margin:0 6px;
+	padding:9px 17px;}
+/*END: Multiple Attempt - Test Retake UI*/
+
+.userPickerListContainer {
+    height: 500px;
+    overflow: auto;
+    display: block;
+}
+
+/*BEGIN Plus Button*/
+
+.rumbleBuildListTop {margin-bottom:30px !important; margin-top:30px !important;}
+
+.addBeforeLink, .addAfterLink {
+ position: absolute;
+ overflow: hidden;
+ left: -10000px;
+ top: -1000px;
+ width: 1px;
+ height: 1px;
+ z-index:1002;
+}
+
+li.liItem:hover .addBeforeLink, .addBeforeLink:focus, .addBeforeLink.forceVisible {
+  top: 0px;
+ }
+
+li.liItem:hover .addAfterLink, .addAfterLink:focus, .addAfterLink.forceVisible {
+  top: auto;
+  bottom: 0px;
+ }
+
+li.liItem:hover .addBeforeLink, li.liItem:hover .addAfterLink,
+.addBeforeLink:focus, .addAfterLink:focus, .forceVisible {
+  height:30px;
+  width:30px;
+  position:absolute;
+  z-index:999;
+  top: auto;
+  left:50%;
+  margin-left:-15px;
+  display:block;
+  background-image:url('../images/plus-icon-sprite.png');
+  background-repeat: no-repeat;
+  overflow: visible;
+}
+li.liItem:hover .addBeforeLink, .addBeforeLink:focus, .forceVisible{
+  top:-15px;
+}
+
+li.liItem:hover .addBeforeLink span,
+.addBeforeLink span {
+  opacity: 0;
+}
+
+li.liItem:hover .addBeforeLink:hover span,
+.addBeforeLink:focus span,
+.addBeforeLink.forceVisible span { /*Hover over top button*/
+    color: #444;
+    display: block;
+    font-size: 10px;
+    left: -68px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    text-indent: 0;
+    top: -30px;
+    white-space: nowrap;
+    overflow:hidden;
+    width:150px;
+    text-transform:uppercase;
+    opacity: 1;
+}
+.addBeforeLink.forceVisible.menuAbove:before {
+ /* The menu had to be pushed above the button due to screen restrictions, shove the add question text below */
+ top: 33px !important;
+}
+
+li.liItem:hover .addAfterLink span,
+ .addAfterLink span {
+  opacity: 0;
+ }
+
+li.liItem:hover .addAfterLink:hover span,
+ .addAfterLink:focus span,
+.addAfterLink.forceVisible span { /*Hover over bottom button*/
+    color: #444;
+    display: block;
+    font-size: 10px;
+    left: -68px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    text-indent: 0;
+    bottom: -30px;
+    white-space: nowrap;
+    overflow:hidden;
+    width:150px;
+    text-transform:uppercase;
+    opacity: 1;
+}
+.addAfterLink.forceVisible.menuBelow:after {
+ /* The menu is below the button so we want to make sure the 'add question' text is above it */
+ bottom: 33px !important;
+}
+
+li.liItem:hover .addAfterLink, .addAfterLink:focus, .addAfterLink.forceVisible {
+  bottom:-15px;
+}
+li.liItem:hover .addBeforeLink:hover, .addBeforeLink:focus, .addBeforeLink.forceVisible {
+ height:30px !important;
+ background-position:0 -30px !important;
+ top:-15px !important;
+ z-index:1003 !important;
+}
+li.liItem:hover .addAfterLink:hover, .addAfterLink:focus, .addAfterLink.forceVisible {
+  height:30px !important;
+ background-position:0 -30px !important;
+ bottom:-15px !important;
+  z-index:1003 !important;
+}
+/* If the user has shrunk their browser window and moved the screen around so the menu is being forced to
+position itself over top of the + icon and add question text, just push them behind everything. */
+.addBeforeLink.forceVisible.menuOver:before,.addAfterLink.forceVisible.menuOver:after,.addBeforeLink.forceVisible.menuOver,.addAfterLink.forceVisible.menuOver
+{
+ z-index: 0!important;
+}
+
+/*END Plus Button*/
+.backLink {
+ float:right;
+}
+
+#addBeforeAfter ul li a:hover {
+background-color: #FFF;
+}
+
+#addBeforeAfter ul li a {
+ white-space: nowrap;
+}
+
+#addBeforeAfter .column-2 {
+ min-height: auto;
+}
+
+#addBeforeAfter.quickAddPal {
+ 	min-width: 300px;
+ 	background-color: #eee;
+    min-width: 300px;
+    padding: 15px 10px;
+    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+    z-index:1001;  /* Make sure this is on top of the action menu buttons on the page */
+}
+
+#addBeforeAfter.quickAddPal .actionMenu{
+	margin-right:15px;
+	line-height: 23px;
+	margin-left:15px
+}
+
+#addBeforeAfter.quickAddPal .actionMenu .actionMenuItem a:hover{
+	 text-decoration:underline;
+}
+
+#addBeforeAfter.quickAddPal .quickAddPalHeader{
+	display:none;
+}
+.answerSaveFailed, .answerSaveFailed:hover, .answerSaveFailed:focus {
+ background: none #d12828 !important;
+ color: #eee !important;
+ text-shadow: none !important;
+ filter:none; /*disable IE Gradient*/
+}
+.userType{
+	width:70px;}
+.usergroupicon{margin-left:10px;}
+.userType .conflictWarningIcon{
+	float:right;
+	margin-top:2px;
+}
+
+#fIsBacktrackProhibited{
+  display:block;
+  float:left;
+}
+
+.warnFont
+{
+  COLOR: #8b0000
+}
+
+/*BEGIN Test Feedback Styles*/
+.reviewTestSubCellForIconBig {
+  min-width: 34px;
+}
+
+.pAnswerFormat {
+  display: inline-block
+}
+
+.spacerImageHolder {
+  margin-left: 20px;
+}
+
+.correctAnswerFlag, .incorrectAnswerFlag, .partialGradeAnswerFlag {
+  margin-right: 5px;
+}
+.reviewQuestionsAnswerDiv .answerTextSpan .vtbegenerated {
+  display:inline-block!important;
+}
+.reviewQuestionsAnswerDiv .answerTextSpan .vtbegenerated p{
+  margin-bottom:0;
+}
+.reviewHsImgCorrAnswer {
+    background-color: rgb(255, 255, 255); /*ie fallback*/
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid #fff;
+    -webkit-box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    visibility: visible;
+    z-index: 98;
+}
+.jumbledSentenceQuestionViewAllDiv {
+  display: inline-block;
+}
+.jumbledSentenceQuestionViewAllDivHeading {
+	border-bottom: 1px solid #000000;
+	font-weight: bold;
+}
+.jumbledSentenceQuestionViewAllDiv {
+	display: inline-block;
+	margin: 10px;
+}
+/*END Test Feedback Styles*/
+
+.attemptAuditLogHelp {
+  display: inline-block;
+  margin: 10px;
+}
+
+
+.receipt-lb .lb-content .container {
+  padding: 10px 24px;
+}
+
+.receipt-lb .lb-header {
+  padding: 20px 12px 20px 62px!important;
+  position:relative;
+  font-size: 145%;
+  font-weight:bold;
+}
+
+.receipt-lb .lb-header.warningReceipt {
+  background: #d28802!important;
+  color:#fff;
+}
+
+.receipt-lb .lb-header:before {
+  content: "";
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background: url(../images/receipt_icons_ia.png) no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  margin-top: -13px;
+}
+
+.receipt-lb .lb-header.warningReceipt:before {
+  background-position: 0 -133px;
+}
+
+.codeOutput {
+    background: none repeat scroll 0 0 #F1F1F1;
+    border-radius: 3px 3px 3px 3px;
+    font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+    font-size: 18px;
+    margin: 9px 0;
+    padding: 9px;
+}
+
+.filterBlocks {
+    height: 250px;
+    overflow: auto;
+    display: block;
+}
+/*Matching Question - Rich Text button Styles*/
+.questionPairDiv .noLabelField {
+	position:relative;
+}
+a.textboxToolbarBtn {
+	position: absolute;
+	bottom:0;
+	left:0;
+}
+
+
+li.matchingAnswers {
+  border-bottom: 1px solid #ccc;
+}
+
+legend {
+  top:0px;
+  height:20px;
+  position: relative;
+  float: left;
+  margin: 0 0px 3px;
+  word-wrap: break-word;
+  line-height: 20px;
+}
+
+legend.multipleAnswerLabel {
+  min-width: auto;
+  width: auto;
+}
+
+div[id*='hspotwrapper'] {
+    float:left;
+    clear: both;
+}
+
+label[for*='hs-ans'] {
+    float: left;
+    display: block;
+    clear  : both;
+    width: 100%;
+}
+
+a[onclick*='clearSelection'] {
+    float: left;
+}
+
+/*Align the field id with the answer paragraph option.*/
+.multiple-choice-table tbody tr td,
+.multiple-answer-table tbody tr td,
+.matching-table tbody tr td {
+  vertical-align: top;
+}
+
+/*Align the input element with the number and answer paragraph option.*/
+.multiple-choice-table tbody tr td input,
+.multiple-answer-table tbody tr td input {
+  vertical-align: top;
+}
+
+.matching-table tbody tr td select {
+  padding: 0px;
+  margin-top: -1px;
+}
+
+/* Spacer and aligner for true/false questions. */
+.spacer-tf-question {
+  margin-bottom: 5px;
+}

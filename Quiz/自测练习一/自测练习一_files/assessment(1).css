@@ -1,0 +1,1030 @@
+/*ASSESSMENT*/
+
+/* @group ASSESSMENT
+----------------------------------------------- */
+
+/*Assessments*/
+div.instructionData {
+  margin: 0 0 12px;
+}
+
+div.QuizBowlScroll {
+  max-height: 300px;
+  overflow: auto;
+  width: 100%;
+}
+
+div.instructionData ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 2px;
+  border-bottom: 1px solid #ccc;
+}
+
+div.instructionData ul li {
+  float: left;
+  list-style: none;
+  margin: 0 12px 0 0;
+  padding: 0 0 6px;
+}
+
+div.instructionData ul li span {
+  color: #555;
+  font-size: 90%;
+}
+
+div.instructionData ul li h3 {
+  display: inline;
+  font-size: 100%;
+  margin: 0;
+}
+
+div.instructionData ul li.instructions {
+  float: right;
+  margin: 6px 0 0;
+  padding: 0;
+}
+
+div.instructionData ul li.saving {
+  float: center;
+  margin: 6px 0 0;
+  padding: 0;
+}
+
+div.instructionData ul li.instructions a.browse {
+  border: 1px solid #ccc;
+  border-bottom: none;
+  font-size: 90%;
+}
+
+.assessmentInstructions {
+  position: relative;
+  margin: 0 0 12px;
+  padding: 3px 12px 6px;
+  background: #f1f1f1;
+}
+
+.assessmentInstructions h3 {
+  margin: 3px 0;
+  padding: 0;
+}
+
+/*
+  The css changes for right, left and width are required to override the div.topbar's 
+  position:fixed and 2015 theme's body.max-width:1300px to allow the div.topbar
+  to be sized correctly in the 2015 theme.
+*/
+.assessmentPortlet {
+  z-index: 1;
+  position: fixed;
+  right: 43px;
+  /* The below is a hack to bypass the auto resizing javascript already on the page.
+   * Please remove !important when touching this again.
+   */
+  right: auto !important;
+  left: auto !important;
+  width: 100%;
+}
+
+/* H3 and h4 are category headers inside the assessmentPortlet. */
+.assessmentPortlet h3,
+.assessmentPortlet div.assessmentPortletBlock h4,
+.assessmentPortlet div.blockContents h4 {
+  font-size: 100%;
+  color: #597298;
+  letter-spacing: 1px;
+  /*border-bottom:1px solid #CEE2F2;
+	padding:1px 0 2px 0;*/
+  font-weight: bold;
+}
+
+div.assessmentPortletBlock h3.headerForProgressBar a {
+  background: none !important;
+}
+
+/* Portlet Block is used when there's a need to have collapsible blocks within a portlet */
+.assessmentPortlet div.assessmentPortletBlock {
+  background: #f9f9f9;
+  border-color: #777;
+  display: block;
+  padding: 0;
+}
+
+.assessmentPortlet div.assessmentPortletBlock h4,
+.assessmentPortlet div.assessmentPortletBlock h4.blockTitle {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* Block Title link */
+.assessmentPortlet div.assessmentPortletBlock h4 a,
+.assessmentPortlet div.assessmentPortletBlock h4.blockTitle a {
+  display: block;
+  font-size: 110%;
+  text-decoration: none;
+  letter-spacing: 0px;
+  background: #f1f1f1;
+  color: #444;
+  margin: 0;
+  padding: 4px 9px;
+  border: 0;
+}
+
+.assessmentPortlet div.assessmentPortletBlock h4 a:hover,
+.assessmentPortlet div.assessmentPortletBlock h4 a:focus,
+.assessmentPortlet div.assessmentPortletBlock h4.blockTitle a:hover,
+.assessmentPortlet div.assessmentPortletBlock h4.blockTitle a:focus {
+  background: #eee;
+}
+
+/* Span within the block title. Used to display total item count.*/
+.assessmentPortlet div.assessmentPortletBlock h4 a span,
+.assessmentPortlet div.assessmentPortletBlock h4.blockTitle a span {
+  color: #ddd;
+  font-weight: normal;
+}
+
+/* Portlet block groups. Contains Item Groups. */
+.assessmentPortlet ul.subCategories,
+ul.assessmentBlockGroups {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.assessmentPortlet div.assessmentPortletBlock ul.subCategories li,
+ul.assessmentBlockGroups li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.assessmentPortlet ul.subCategories li a,
+ul.assessmentBlockGroups li a.itemHead {
+  padding: 4px 16px;
+  background: #e3efff url(images/more_options.gif) no-repeat 3px center;
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  border-top: 1px solid #777;
+  font-weight: bold;
+  color: #597298;
+  letter-spacing: 1px;
+}
+
+ul.assessmentBlockGroups li a.itemHead:hover,
+ul.assessmentBlockGroups li a.itemHead:focus {
+  background-color: #e3efff;
+  text-decoration: underline;
+}
+
+ul.assessmentBlockGroups li a.itemHeadOpen {
+  background: #fff no-repeat 3px center;
+}
+
+ul.assessmentBlockGroups li a.itemHeadOpen:hover,
+ul.assessmentBlockGroups li a.itemHeadOpen:focus {
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+.assessmentPortlet ul.subCategories li:first-child a,
+ul.assessmentBlockGroups li:first-child a {
+  border: none;
+}
+
+.assessmentPortlet ul.subCategories li a:hover,
+.assessmentPortlet ul.subCategories li a:focus,
+ul.assessmentBlockGroups li a:hover,
+ul.assessmentBlockGroups li a:focus {
+  background-color: #fff;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/*Portlet block item groups. Contains Items. */
+.assessmentPortlet ul.itemGroup li a,
+ul.assessmentBlockGroups li ul.itemGroups li a {
+  display: inline;
+  padding: 0;
+  font-weight: bold;
+  font-size: 105%;
+  border: 0;
+}
+
+.assessmentPortlet ul.itemGroup li a:hover,
+.assessmentPortlet ul.itemGroup li a:focus {
+  text-decoration: underline;
+}
+
+.assessmentPortlet div.assessmentPortletBlock h3 {
+  margin: 0;
+}
+
+.assessmentPortlet div.assessmentPortletBlock h3 a {
+  display: block;
+  padding: 3px 12px;
+  margin: 0;
+  text-decoration: none;
+  background: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.assessmentPortlet div.assessmentPortletBlock h3 a:hover,
+.assessmentPortlet div.assessmentPortletBlock h3 a:focus {
+  text-decoration: none;
+}
+
+.assessmentPortlet div.assessmentPortletBlock:first-child h3 a {
+  border-top: none;
+}
+
+.assessmentPortlet div.assessmentPortletBlock h3 a.open {
+  display: block;
+  padding: 3px 12px;
+  margin: 0;
+  text-decoration: none;
+  background: #e3efff url(images/less_options.gif) no-repeat 99% center;
+}
+
+.assessmentPortlet ul.objectList li {
+  background-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.assessmentBlockGroups li ul.itemGroups li a {
+  font-weight: normal;
+}
+
+.assessmentPortletBlock ul li {
+  background-image: none;
+  padding: 0;
+  margin: 0 0 0 0px;
+}
+
+.assessmentPortlet .blockContents ul li ul li span,
+.assessmentPortlet .blockContents ul li span,
+.assessmentPortlet ul li ul li span {
+  margin: 0 0 0 4px;
+}
+
+.savingQuestion {
+  display: none;
+  background: none;
+  color: #cc0033;
+  font-size: 150%;
+  position: relative;
+  padding: 2px;
+}
+
+/* this is purely a dummy style to approximate the spellcheck bar in the VTBE. not for production */
+tr.dummyVTBEFooter td {
+  border: 1px solid #666666;
+  background: #eee;
+}
+
+/*Assessments?*/
+.qIncomplete {
+  float: left;
+  display: block;
+  border: 1px solid #999;
+  width: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin: 1px;
+  color: #333;
+  background: #fff;
+  text-decoration: none;
+}
+
+.qComplete {
+  float: left;
+  display: block;
+  border: 1px solid #999999;
+  width: 30px;
+  text-align: center;
+  color: #003366;
+  background-color: #cccccc;
+  color: #888;
+  font-weight: normal;
+  margin: 1px;
+  text-decoration: none;
+}
+
+/* @end ASSESSMENT */
+
+.questionNumber {
+  color: #aaa;
+}
+
+.completionContainer {
+  overflow: auto;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.completionContainerLarge {
+  overflow: auto;
+  height: 75px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.completionContainer a img {
+  vertical-align: baseline;
+}
+
+.pagedRumble {
+  margin: 0 0 14px;
+  padding: 4px 2px;
+  border: 0;
+}
+
+/* This style isn't used right now - was for rendering the paged points in a block without the grey bar
+*/
+
+.pagedPointsOutsideBar {
+  background: #fae7ae none repeat scroll 0% !important;
+  color: #000000 !important;
+  font-weight: bold;
+  line-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0pt;
+  left: auto;
+  right: 6px;
+  font-size: 110%;
+  letter-spacing: 1px;
+}
+
+.pagedPoints {
+  background: #fae7ae none repeat scroll 0% !important;
+  color: #000000 !important;
+  font-weight: bold;
+  line-height: 100%;
+  margin: -5px 24px -5px -10px !important;
+  padding: 5px 0px 6px 10px;
+  font-size: 110%;
+  letter-spacing: 1px;
+}
+
+.takeQuestionDiv,
+#assessmentGradeForm #dataCollectionContainer > div[id*="_"],
+#assessmentGradeForm #dataCollectionContainer > div[id*="step"],
+#assessmentGradeForm #dataCollectionContainer h3.steptitle.submittitle {
+  padding: 20px 30px;
+  border-top: 1px solid #ccc;
+}
+
+.takeQuestionDiv h3 {
+  margin: 0;
+}
+
+.takeQuestionDiv + h3 {
+  padding-left: 28px;
+}
+
+#assessmentGradeForm #dataCollectionContainer {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#assessmentGradeForm .infoListWrapper {
+  margin: 0 -12px 18px;
+}
+
+/* @group ASSESSMENT CANVAS */
+
+.copyQuestion,
+.linkQuestion {
+  padding-left: 22px !important;
+  padding-bottom: 2px !important;
+}
+
+.copyQuestion {
+  background: transparent url(/images/ci/icons/file_copy_ti.png) no-repeat
+    scroll 1px center;
+}
+
+.linkQuestion {
+  background: transparent url(/images/ci/icons/file_link_ti.png) no-repeat
+    scroll 1px center;
+}
+
+div.assessmentHeader {
+  border: 1px solid #cccccc;
+  padding: 3px 6px 6px;
+}
+
+div.assessmentHeader h3 {
+  margin: 3px 3px 6px;
+  padding: 0;
+}
+
+div.assessmentHeader div {
+  margin: 3px;
+  color: #555;
+}
+
+.assess-stats .contentListPlain {
+  margin-top: 0;
+}
+
+.assess-stats .contentListRight .taskbuttondiv {
+  padding: 0;
+  font-weight: bold;
+}
+
+.assess-stats .details {
+  clear: both;
+}
+
+/* @end ASSESSMENT CANVAS */
+
+/* @group KEY:VALUE TABLE */
+
+.questionShell {
+  border-bottom: 1px solid #cccccc;
+}
+
+.quesTable tr:nth-child(even),
+.assess-stats .bMedium tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.quesTable th[scope="col"],
+.assess-stats .bMedium th[scope="col"] {
+  color: #666666;
+}
+
+.questionShell > tr,
+.questionShell > tbody > tr {
+  border-top: 1px solid #f1f1f1;
+}
+
+.questionShell > tr:first-child,
+.questionShell > tbody > tr:first-child {
+  border: none;
+}
+
+.questionShell th.labelCell,
+.questionShell .labelCell {
+  font-weight: bold;
+  color: #888;
+}
+
+.questionShell .field {
+  border-bottom: 1px dotted #ccc;
+}
+
+/* @end KEY:VALUE TABLE */
+
+/* @group TAKE QUESTION */
+
+.takeQuestionDiv .stepTitleRight.liveArea,
+#assessmentGradeForm .stepTitleRight.liveArea {
+  border-color: #cccccc;
+  -moz-border-radius: 0 0 0 4px;
+  -webkit-border-radius: 0 0 0 4px;
+  border-radius: 0 0 0 4px;
+  border-width: 0 0 1px 1px;
+  padding: 3px 30px 6px 12px;
+  right: 0;
+  top: 0;
+  -moz-box-shadow: 1px -1px 3px rgba(0, 0, 0, 0.05) inset;
+  -webkit-box-shadow: 1px -1px 3px rgba(0, 0, 0, 0.05) inset;
+  box-shadow: 1px -1px 3px rgba(0, 0, 0, 0.05) inset;
+}
+
+/* @end TAKE QUESTION*/
+
+/* @group ASSESSMENT RELATED ALIGNMENTS */
+
+div.pushAlignmentsLightboxContainer {
+  padding: 50px;
+  line-height: 1.8em;
+  width: 400px;
+}
+
+/* @end ASSESSMENT RELATED ALIGNMENTS */
+
+/* To make sure the display order column doesn't overlap the correct position column */
+.orderingAnswersEdit {
+  padding-left: 60px;
+}
+
+.questionStatus {
+  padding: 3px 2px 0;
+}
+
+/* @Since 9.1sp6 */
+.timedQuestionStatus {
+  border-top: 2px groove #ddd;
+  border-top: 2px groove rgba(255, 255, 255, 0.3);
+  padding: 3px 0 0;
+  margin: 0 2px;
+}
+
+.completionContainer {
+  padding: 6px 12px 0;
+}
+
+.questionStatus .questionStatusLabel {
+  margin: 0;
+  font-weight: normal;
+  letter-spacing: 0;
+}
+.questionStatus .questionStatusLabel a {
+  color: #666;
+  text-decoration: none;
+}
+.questionStatus .questionStatusLabel a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+/*Begin timed assessment*/
+
+/* @Since 9.1sp6 */
+.answerSavedButton,
+.answerSavedButton:hover,
+.answerSavedButton:focus {
+  background-image: url(/images/ci/icons/current_li.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: 6px center !important;
+  padding-left: 22px !important;
+  background-color: #888;
+  color: #eee;
+  text-shadow: 0 -1px 0 #000;
+  border-color: #777;
+  filter: none;
+}
+
+.answerSavedButton:hover,
+.answerSavedButton:focus {
+  background-color: #666;
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+  border-color: #555;
+}
+
+/* @Since 9.1sp6 */
+.answerSavingButton,
+.answerSavingButton:hover,
+.answerSavingButton:focus {
+  background-color: #ccc;
+  color: #444;
+  border-color: #999;
+  background-image: url(/images/ci/icons/file_li.gif) !important;
+  background-repeat: no-repeat;
+  background-position: 6px center;
+  padding-left: 22px !important;
+}
+
+/* @Since 9.1sp6 */
+.continuousTimerWarning {
+}
+.timeUpWarning {
+  color: #cf0c0c;
+}
+.thirtySecondWarning {
+  color: #cf0c0c;
+}
+.oneMinuteWarning {
+  color: #cf0c0c;
+}
+.fiveMinuteWarning {
+  color: #000;
+}
+.halfTimeWarning {
+  color: #000;
+}
+.headerForProgressBar {
+  position: relative;
+  z-index: 100;
+}
+
+.progressBar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 90;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.progressBarStyle {
+  background: #b6f796;
+  background-image: -moz-linear-gradient(100% 100% 90deg, #83af6d, #b6f796);
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 90%,
+    from(#b6f796),
+    to(#83af6d)
+  );
+}
+.progressBarStyleOneMin {
+  background: #ffe79f;
+  background-image: -moz-linear-gradient(100% 100% 90deg, #dfc77d, #ffe79f);
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 90%,
+    from(#ffe79f),
+    to(#dfc77d)
+  );
+}
+
+.progressBarStyleThirtySec {
+  background: #ffafaf;
+  background-image: -moz-linear-gradient(100% 100% 90deg, #ff6f6f, #ffafaf);
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 90%,
+    from(#ffafaf),
+    to(#ff6f6f)
+  );
+}
+.progressBarStyleOvertime {
+  background: #ffafaf;
+  background-image: -moz-linear-gradient(100% 100% 90deg, #ff6f6f, #ffafaf);
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 90%,
+    from(#ffafaf),
+    to(#ff6f6f)
+  );
+}
+
+.timerBar {
+  position: relative;
+  padding: 3px 6px;
+  text-align: center;
+  color: 000;
+  border: 2px solid #fff;
+  background: #f9f9f9;
+  background-image: -moz-linear-gradient(100% 100% 90deg, #fff, #f9f9f9);
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 90%,
+    from(#f9f9f9),
+    to(#fff)
+  );
+  -moz-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  font-size: 105%;
+  font-weight: bold;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  margin: 4px 14px 0;
+}
+
+.timer strong {
+  position: relative;
+  z-index: 100;
+}
+
+.timerText {
+  padding: 6px 14px;
+}
+
+.timer.liveArea {
+  padding: 6px 7px 9px;
+}
+
+.student-preview-mode .timer.liveArea {
+  margin-top: 44px;
+}
+
+.timerMessage {
+  padding: 2px 0 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  float: right;
+}
+
+.timeLabel {
+  color: #666;
+  font-weight: normal;
+}
+
+.timeValue {
+  font-size: 120%;
+}
+
+.timer-toggle.timer-collapsed {
+  background: url("../../images/portlet_expand_alt.gif") no-repeat 0px 2px
+    transparent;
+  padding: 0 0 4px 14px;
+  display: inline-block;
+}
+
+.timer-toggle.timer-expanded {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  left: 4px;
+  background: url("../../images/portlet_contract_alt.gif") no-repeat 3px 4px
+    transparent;
+}
+
+.timerBar .timerLabel:before,
+.timerMessage:before {
+  font: 1.4em/0 "Pictos", sans-serif;
+  margin-right: 0.4em;
+}
+
+.progressBarStyleOvertime + .timerLabel:before {
+  content: "t";
+  color: #cf0c0c;
+}
+.progressBarStyleOneMin + .timerLabel:before {
+  content: "!";
+  color: #7f6b2f;
+}
+
+.progressBarStyleThirtySec + .timerLabel:before {
+  content: "!";
+  color: #cf0c0c;
+}
+
+.timerMessage:before {
+  content: "";
+}
+
+.halfTimeWarning:before {
+  color: #999;
+}
+
+/*End timed assessment*/
+
+#bb-assessment-canvas .receipt[id*="receipt_nested"] a.close {
+  right: 6px;
+  top: 6px;
+}
+
+#bb-assessment-canvas .contentListPlain > li:first-child {
+  border-top-color: #ccc;
+}
+
+#bb-assessment-canvas .contentListPlain > li {
+  padding-left: 42px;
+  min-height: 16px;
+}
+
+#bb-assessment-canvas .contentListPlain > li .item {
+  padding: 0;
+}
+
+#bb-assessment-canvas .contentListPlain > li .details {
+  padding-top: 12px;
+  padding-bottom: 5px;
+}
+
+#bb-assessment-canvas .contentListPlain > li:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+/* prevent feedback options from truncation */
+#feedbackOptions th.test_score {
+  width: 100px;
+}
+
+#feedbackOptions th.test_answersIncorrectColumn {
+  width: 100px;
+}
+
+#feedbackOptions_databody input[type="checkbox"] {
+  margin-right: 1px;
+}
+
+#feedbackOptions_databody label {
+  margin-right: 10px;
+}
+
+.jumbled-answer-label div p {
+	margin-top: 0px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1037px) {
+  .timer.liveArea {
+    padding: 10px;
+  }
+
+  .takeQuestionDiv {
+    padding: 45px 10px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    box-shadow: 0px 3px 3px #9999995b;
+    margin-bottom: 3rem;
+  }
+
+  #bb-assessment-canvas .contentListPlain > li .details,
+  #bb-take-assessment .contentListPlain > li .details {
+    overflow: hidden;
+  }
+
+  #bb-assessment-canvas .contentListPlain li {
+    padding-left: 0px;
+  }
+
+  #bb-assessment-canvas .designAreaHeader .key-valueTable tbody tr th,
+  #bb-assessment-canvas .designAreaHeader .key-valueTable tbody tr td,
+  #bb-take-assessment #instructionBlock .key-valueTable tbody tr th,
+  #bb-take-assessment #instructionBlock .key-valueTable tbody tr td {
+    width: 100%;
+    float: left;
+  }
+
+  #bb-assessment-canvas .contentListPlain li input {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 40px;
+    top: 15px;
+  }
+
+  #bb-assessment-canvas .contentListPlain li:first-of-type input {
+    top: 35px;
+  }
+
+  #bb-assessment-canvas .contentListPlain li h3 {
+    float: right;
+    width: 84%;
+    margin-left: 95px;
+  }
+  #bb-take-assessment #dataCollectionContainer {
+    margin: 0px 10px;
+  }
+
+  #bb-take-assessment .takeQuestionDiv p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    clear: both;
+    padding: 0px 20px 0px 0px;
+  }
+  
+  #bb-take-assessment .takeQuestionDiv #ordering-label p {
+    display: inline-block;
+  }
+
+  #bb-take-assessment .takeQuestionDiv .stepTitleRight.liveArea {
+    border: none;
+    box-shadow: none;
+    position: absolute;
+    top: auto;
+    bottom: 0px;
+    padding: 0px 13px 3px 0px;
+  }
+
+  #bb-take-assessment [id^=hspotwrapper] imag {
+    width: 100%;
+  }
+
+  #bb-take-assessment div[id^="hspotwrapper"] {
+    overflow: scroll;
+  }
+
+  .takeQuestionDiv fieldset .legend-visible {
+    width: 100%;
+    text-align: justify;
+  }
+
+  #bb-take-assessment div[id^="hspotwrapper"] {
+    overflow-x: scroll;
+    max-width: 91vw;
+  }
+  
+  .clearfix .inline-align {
+    clear: none;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 737px) and (max-width: 1037px) {
+  #bb-take-assessment .takeQuestionDiv p {
+    margin-top: 1px;
+  }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 736px) {
+  #bb-take-assessment .stepcontent input[type="text"][id^="fib_plus"] {
+    float: left;
+    clear: both;
+    width: 97%;
+    margin: 10px 0px;
+  }
+
+  #bb-take-assessment .takeQuestionDiv .matching-table tr td:not(.matching-numbering),
+  #bb-take-assessment .takeQuestionDiv .multiple-answer-table tr td:not(.multiple-answer-numbering),
+  #bb-take-assessment .takeQuestionDiv .multiple-choice-table tr td:not(.multiple-choice-numbering),
+  #bb-take-assessment .takeQuestionDiv .multiple-choice-table tr td:not(.multiple-option-row) {
+    padding: 0px 3px;
+    clear: both;
+    padding-left: 0px;
+    position: relative;
+    display: inline-block;
+  }
+
+  #bb-take-assessment .takeQuestionDiv .matching-table tr td input[id^="mc-ans"],
+  #bb-take-assessment .takeQuestionDiv .multiple-answer-table tr td input[id^="ma-ans"],
+  #bb-take-assessment .takeQuestionDiv .multiple-choice-table tr td input[id^="mc-ans"],
+  #bb-take-assessment .takeQuestionDiv input.spacer-tf-question {
+    position: relative;
+    margin-left: 2px;
+    margin-right: 0px;
+    top: -4px;
+  }
+
+  #bb-assessment-canvas .item h3 {
+    width:90%;
+  }
+
+  .multiple-choice-table td input {
+    position: absolute;
+    top: -4px
+  }
+
+  .multiple-answer-table td p{
+      margin-left: 40px;
+      
+  }
+  .multiple-choice-table td p {
+      margin-left: 20px;
+  }
+
+  #bb-take-assessment div[id^="hspotwrapper"] ~ .genericButton {
+    position: relative;
+    left: -20px;
+    top: 10px
+  }
+  
+  .multiple-choice-table tr td.multiple-choice-numbering,
+  .multiple-answer-table tr td.multiple-answer-numbering,
+  .matching-table tr td.matching-numbering {
+    padding-right: 5px;
+  }
+  
+  .multiple-choice-table tr td div label > p,
+  .multiple-answer-table tr td div label > p,
+  .matching-table tr td div label > p {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  
+  .matching-table tbody tr > td {
+    padding-right: 0px;
+  }
+
+  .stepcontent ol li label,
+  .takeQuestionDiv input.spacer-tf-question + label {
+    display: inline;
+    float: none;
+  }
+
+  .multiple-option-row {
+    line-height: 16px;
+  }
+
+  .multiple-answer-table tr td > input[type="checkbox"]  {
+    height: 20px;
+    padding: 0px; 
+  }
+
+  .matching-table tr td div > p {
+    margin-top: 4px;
+  }
+
+  .spacer-tf-question {
+    margin-bottom: -1px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 736px) {
+  #bb-take-assessment .steptitle {
+    left: 0px;
+  }
+}
+
+@media only screen and (min-width: 1038px){
+  .multiple-choice-table tbody tr td p,
+  .multiple-answer-table tbody tr td p,
+  .matching-table tbody tr td p {
+    margin-top: 0px;
+  }
+}
+
+.matching-table tbody tr td select {
+  padding: 0px;
+  vertical-align: top;
+}
