@@ -25,7 +25,6 @@ def main():
 
     seed = input('请输入随机数种子: ').encode()
 
-    input('按回车开始')
 
     if mode == '1':
         hash_name = 'MD5'
@@ -37,9 +36,13 @@ def main():
         hash_name = 'SHA256'
         hash_algo = SHA256
 
+    time_limit = float(input('请输入时间限制（秒）: '))
+    input('按回车开始')
+    begin_time = datetime.now()
+    
+
     count = 0
     state = seed
-    begin_time = datetime.now()
     last_zeros = 0
     while True:
         count += 1
@@ -55,6 +58,10 @@ def main():
             ))
             print('花费时间: %.2f 秒' % (datetime.now() - begin_time).total_seconds())
             last_zeros = leading_zeros
+
+        if (datetime.now() - begin_time).total_seconds() > time_limit:
+            print('时间限制已到，退出')
+            break
 
 
 if __name__ == '__main__':
