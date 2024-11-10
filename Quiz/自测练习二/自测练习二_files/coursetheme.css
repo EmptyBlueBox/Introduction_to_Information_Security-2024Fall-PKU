@@ -1,0 +1,473 @@
+/* === OCEAN Course Theme =========================================== */
+
+#globalNavPageContentArea {
+	background: #4CADFF url(images/blue-bg.gif) repeat;
+}
+
+a,
+.blockGroups .itemHead,
+.timediv ul li a {
+    color: #2B6899;
+    border-bottom-color: #2B6899;
+}
+
+a:active {
+    border: none;
+    outline: none;
+}
+
+/* BODY
+   ================================================== */
+
+/* @branding -- do not remove */
+
+#contentFrame,
+#schemePreview,
+/* === */
+.breadcrumbs,
+body.wizardBody .containerWizard,
+.paneTabs {
+    background-color: #4B95DF;
+}
+.breadcrumbs,
+.breadcrumbs .theme-switch,
+.breadcrumbs li.root {
+    border-color: #2A5580;
+}
+
+.paneTabs .active a:before {
+    border-bottom-color: #B6BF89;
+}
+
+.paneTabs .active a:after {
+    border-bottom-color: #E9EDD7;
+}
+
+.paneTabs ul li a,
+.paneTabs .external a,
+.paneTabs .personal a {
+    border-color: #B6BF89;
+}
+
+/* BREADCRUMBS
+   ================================================== */
+
+.breadcrumbs .path a {
+    color: #fff; 
+}
+
+.breadcrumbs .path a:hover {
+    color: #C3ECFE;
+}
+
+.path .root a:before,
+.simplePath .root a:before {
+    color: #FFF;
+}
+
+.path .root:hover a:before,
+.simplePath .root:hover a:before {
+    color: #C3ECFE;
+}
+
+.path li, 
+.simplePath li {
+	padding: 0px 12px 0px 0;
+	margin: 0 0px 0 0;
+	background-color: transparent;
+	background-image: url(images/indicator_gt_white.png);
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	font-weight: normal;
+	color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.breadcrumbs .switcherLabel {
+	color: #FFFFFF;
+}
+
+/* PANE TABS
+   ================================================== */
+
+/* Idle */
+
+
+
+
+/* CONTENT PANE
+   ================================================== */
+
+.contentBox,
+.portal .contentBox {
+    border-color: #aaa
+}
+
+/* @branding -- do not remove*/
+
+#contentArea,
+#schemePreviewBody {
+    background: #FFF;
+    border-color: #aaa;
+}
+
+.landingPageColumn .outcomesLanding li h3,
+.landingPageColumn p {
+    border-color: #C0CDB9;
+    color: #333;
+}
+
+.collapsible {
+    background-color: #FFF
+}
+
+/* PAGE HEADER
+   ================================================== */
+
+/* @branding -- do not remove*/
+
+#pageHeader,
+#schemePreviewHead {
+    background-color: #DEDEDE;
+}
+
+/*.pageTitle {
+
+}*/
+
+/* CONTROL ELEMENTS
+   ================================================== */
+
+/* Action Bars */
+
+.actionBar,
+.actionBarMicro,
+/*Side navigation single controls ("Unenroll" etc.)*/
+.singleControl,
+.navPalette .discover {
+    background-color: #4096DC;
+    border-color: #3074AB;
+}
+
+.menuWrap {
+	border: none;
+}
+
+.mainButton a,
+.secondaryButton a,
+	/*Login page control links*/
+#loginHeader ul li a,
+#loginLang h2 a {
+    border-color:;
+   	border-color:;
+}
+
+/* Action bar main and secondary button links */
+.mainButton > a,
+.secondaryButton > a,
+.mainButton h2 > a,
+.secondaryButton h2 > a  {
+    background: -moz-linear-gradient(center top , #3D90D3 0%, #2B6899 100%);
+    background: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#3D90D3), to(#2B6899));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#3D90D3, endColorstr=#2B6899";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3D90D3, endColorstr=#2B6899);
+    border-color: #3074AB;
+    color:#fff;
+}
+
+/* Hover and focus */
+
+/* Action bar links */
+
+.actionBarMicro .active > a:after,
+a.liveAreaTab:after,
+.nav .sub a:hover:after,
+.nav .sub:hover a:after,
+.nav .sub h2 a:hover:after,
+.nav .sub.mainButton:hover h2 a:after,
+#loginLang h2:hover:after,
+#loginLang:hover h2:after {
+    border-bottom-color: #f0f0f0
+}
+
+.mainButton > a:hover,
+.mainButton h2 > a:hover,
+li.mainButton:hover > a,
+li.mainButton:hover h2 > a,
+.secondaryButton h2 > a:hover, 
+.secondaryButton > a:hover,
+.actionBarMicro .active a,
+.actionBarMicro .active a:hover,
+.actionBarMicro .active a:focus,
+	/*Side nav single controls*/
+.singleControl a:hover,
+.singleControl a:focus,
+.discover a:hover,
+.discover a:focus,
+	/*Links in an "open" state*/
+.liveAreaTab,
+a.liveAreaTab,
+a.liveAreaTab:hover,
+a.liveAreaTab:focus,
+.actionBar ul li a.liveAreaTab:focus,
+.actionBar ul li.mainButton a.liveAreaTab,
+.actionBar ul li.secondaryButton a.liveAreaTab,
+.panelTabs li.active a.edit,
+.panelTabs li.active a.edit:hover,
+.panelTabs li.active a.edit:focus
+	 {
+    background: -moz-linear-gradient(center top , #2B6899 0%, #3D90D3 100%);
+    background: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#2B6899), to(#3D90D3));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#2B6899, endColorstr=#3D90D3";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#2B6899, endColorstr=#3D90D3);
+    border-color: #3074AB;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 1);
+}
+
+.nav .sub ul,
+.cmdiv ul,
+.menumini ul,
+.quickAddPal,
+.keyboardAccess,
+.nav .sub ul li a,
+.cmdiv a,
+.menumini a,
+.paneTabs .nav .sub a,
+	/* tagging */
+span.currentTags,
+	/* Inline editing elements */
+.liveArea,
+.liveArea-slim,
+.liveAreaTab,
+	/* Button is turned into liveArea tab when .liveaArea is displayed. */
+a.liveAreaTab,
+a.liveAreaTab:hover,
+a.liveAreaTab:focus,
+.previewArea,
+	/* Preview area (read-only version of live area) */
+.jumptopage,
+.panelTabs li.active a.edit,
+.panelTabs li.active a.edit:hover,
+.panelTabs li.active a.edit:focus,
+	/*Multi-column flyout*/ 
+.bcContent .flyout,
+	/*Overrides for the file hierarchy three*/
+ul.tree li a + img + a:focus,
+ul.tree li img + img + a:focus,
+div.treeContainer ul.tree li a.itemActive,
+#learningUnitToc ul.tree li a.itemActive,
+ul.tree li a.itemActive,
+	/* Menu borders. */
+.nav .sub ul,
+.cmdiv ul,
+.menumini ul,
+.quickAddPal,
+.keyboardAccess,
+.cmdiv,
+	/* contextual menu for tagging */
+span.currentTags,
+	/* Paging preference element */
+.rumble ul li.jumptopage,
+.rumble ul li.inventory_page.jumptopage,
+.rumble_top ul li.jumptopage,
+.rumble_top ul li.inventory_page.jumptopage,
+.inventory_paging input,
+.inventory_paging .currentPage,
+.jumptopage,
+.jumptopage input,
+	/* Close menu link */
+.cmdiv li.contextmenubar_top a,
+span.currentTags a.closeCloud,
+.cmdiv li.contextmenubar_top a:focus,
+.cmdiv li.contextmenubar_top a:hover,
+.currentTags a.closeCloud:hover,
+.currentTags a.closeCloud:focus
+{
+    background-color: #f0f0f0;
+    border-color: #888;
+}
+
+.cmdiv li.contextmenubar_top a,
+.cmdiv li.contextmenubar_top a:focus,
+.cmdiv li.contextmenubar_top a:hover,
+.currentTags a.closeCloud:hover,
+.currentTags a.closeCloud:focus {
+    background-color: #f0f0f0!important
+}
+
+/*Tab indicators*/
+.portlet .containerTabs .active a:after {
+    border-bottom-color: #EEEEEE
+}
+
+.mainButton a.disabled, .mainButton a.disabled:hover, .secondaryButton a.disabled:hover, .mainButton a.disabled:focus, .secondaryButton a.disabled:focus {
+	background: none;
+    -ms-filter: none;
+    filter: none;	
+	color: #fff;
+	text-shadow: none; 
+}
+
+/* BUTTONS
+   ================================================== */
+
+	/* @branding -- do not remove */
+#primaryButton,
+	/*===*/
+input[type="submit"].submit,
+.button-1,
+.button-1-img {
+
+    background: -moz-linear-gradient(center top , #3D90D3 0%, #2B6899 100%);
+    background: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#3D90D3), to(#2B6899));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#3D90D3, endColorstr=#2B6899";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3D90D3, endColorstr=#2B6899);
+    color: #F0F0F0;
+    border-color: #3074AB;
+    background-clip: padding-box;
+}
+
+input[type="submit"].submit:hover,
+.button-1:hover,
+.button-1:focus,
+.button-1-img:hover,
+.button-1-img:focus {
+    background: -moz-linear-gradient(center top , #2B6899 0%, #3D90D3 100%);
+    background: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#2B6899), to(#3D90D3));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#2B6899, endColorstr=#3D90D3";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#2B6899, endColorstr=#3D90D3);
+    border-color: #3074AB;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 1);
+    border-color: none;
+}
+
+
+/* PORTAL MODULES
+   ================================================== */
+
+	/* @branding -- do not remove */
+#moduleBorder,
+#moduleBody,
+	/*===*/
+.portlet {
+    border-color:;
+    background-color: #fff;
+}
+
+.portlet div.scroll_div {
+    background-color: #EEE;
+    border-color: #CCC;
+}
+
+/* Portlet Title */
+
+	/* @branding -- do not remove */
+#moduleTitle,
+	/*===*/
+.portlet h2 {
+    background-color: #4B95DF;
+    color: #fff;
+    text-shadow: 0 1px 0 #222;
+}
+
+/*  Portlet Title on hover */
+.portlet h2.dragHandle:hover,
+.reorderableModule:hover h2 {
+    color: #fff
+}
+
+/*  Portlet Style on hover */
+.reorderableModule:hover {
+    border-color:#4B95DF;
+}
+
+
+
+
+/* LOGIN PAGE
+   ================================================== */
+
+#loginHeader ul li,
+#loginLang h2 {
+}
+
+#loginBox li label,
+.portlet #loginBoxFull li label {
+    color: #666
+}
+
+div.loginBack b {
+    background-color: #fff
+}
+
+#loginBox li input[type="text"],
+#loginBox li input[type="password"] {
+    border-color: #888
+}
+
+#loginBox li input[type="text"]:hover,
+#loginBox li input[type="password"]:hover,
+#loginBox li input[type="text"]:focus,
+#loginBox li input[type="password"]:focus {
+    border-color: #617D1F;
+    color: #000;
+    background: #FFF;
+}
+
+#loginOptions ul li a,
+#loginOptions ul li.subOption a,
+.forgot a {
+    border-bottom-color: #617D1F
+}
+
+
+/*Login page top controls links */
+#loginHeader ul li a:hover,
+#loginHeader ul li a:focus,
+#loginLang h2:hover {
+	
+}
+
+#loginHeader ul li:hover,
+#loginLang h2:hover {
+}
+
+
+/* INVENTORY TABLES
+   ================================================== */
+
+/* Color for zebra stripes */
+table.inventory tbody tr.gray td,
+table.inventory tbody tr.gray th {
+    background-color: #f0f0f0
+}
+
+/* REORDER HANDLES
+   ================================================== */
+
+.reorder,
+.item .reorder {
+    background-color: #ededed
+}
+
+
+/* DATA COLLECTION PAGES
+   ================================================== */
+
+.steptitle,
+.submittitle {
+    color: #000000
+}
+
+/* COPYRIGHT
+   ================================================== */
+.newCopyright a {
+	color: #FFFFFF;
+}
+
+.legal { color: #fff; }
+
+/* /OCEAN Course Theme */

@@ -1,0 +1,1103 @@
+/* @group TOP FRAME
+----------------------------------------------- */
+
+/* @group TOP FRAME LAYOUT */
+
+/*Branding image container.*/
+
+/*Application tabs (top frame)*/
+
+table.bouncer {
+    width: 100%;
+}
+
+table.bouncer td {
+    padding:0;
+}
+
+.brandingImgWrap {
+    overflow:hidden;
+}
+
+/*Branding image is hidden when compact tabs are used*/
+.topTabs-compact .bannerImage, .topTabs-compact .brandingImgWrap {
+    display:none;
+}
+
+/*Compact tabs*/
+.topTabs-compact {
+    position:relative;
+}
+
+/*Center aligned tabs*/
+.topTabs .tabWrapper-center .appTabs, .topTabs-compact .tabWrapper-center .appTabs {
+    margin: 0 auto;
+}
+
+/*Right aligned tabs.*/
+.topTabs .tabWrapper-right .appTabs, .topTabs-compact .tabWrapper-right .appTabs {
+    float: right;
+}
+
+#topFrame /*@branding - do not remove*/,
+    /*---*/
+.bgBanner {
+    background-position: 0 0px;
+    background-repeat: no-repeat;
+    color:#CCCCCC;
+}
+
+.brandingImgWrap {
+    height:50px;
+}
+
+.brandingImgWrap a {
+    display: inline-block;
+    position: absolute;
+}
+
+.brandingImgWrap a:focus {
+    outline-color: #CCC;
+}
+
+.bannerImage {
+    max-height: 35px;
+}
+
+.brandingImgWrap img[src*="header_institution"] {
+    left: 20px;
+    max-height: 60px;
+    position: absolute;
+    top: 0px;
+    z-index: 9001;
+}
+
+.brandingImgWrap img {
+    left: 20px;
+    max-height: 50px;
+    max-width: 140px;
+    position: absolute;
+    top: 7px;
+    z-index: 9001;
+}
+
+/*Branding image, hot spots and hot links are hidden when compact tabs are used*/
+.topTabs-compact .bannerImage, .topTabs-compact .brandingImgWrap, .topTabs-compact .hotItems {
+    display:none;
+}
+
+/*Nav*/
+.global-nav-bar-wrap {
+    background-color: #000;
+    width: 100%;
+    height: 0px;
+    background: #333;
+}
+
+/* from theme specific */
+/*Regular tabs*/
+.topTabs {
+    padding: 0;
+    background-color: #333; /*@pal*/
+    box-shadow: none;
+    color: #FFFFFF;
+    height: 100%;
+}
+
+
+/*Compact tabs*/
+.topTabs-compact {
+    height: 52px;
+}
+
+/*Tab wrapper*/
+.tabWrapper-left, .tabWrapper-center, .tabWrapper-right {
+    width: auto;
+    padding: 0px 28px;
+}
+
+/*Table that contains application tabs*/
+/*Regular tabs*/
+.appTabs {
+    width: auto;
+    position: relative;
+}
+
+.topTabs-compact .tabWrapper-left, .topTabs-compact .tabWrapper-center, .topTabs-compact .tabWrapper-right {
+    padding-top: 24px;
+}
+
+/* @end */
+
+/* @group APPLICATION TABS */
+
+/*Application tabs*/
+/*Regular tabs*/
+.appTabs a {
+    font-size:110%;
+    text-align:center;
+    display:block;
+    text-decoration:none;
+    padding: 10px 1.2em 19px;
+    color:#efefef;
+    color:rgba(255,255,255,0.9);
+    z-index:100;
+    white-space:nowrap;
+    position: relative;
+    border: 1px solid transparent;
+    border-width: 1px 1px 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    font-size: 1.1rem;
+}
+
+/*@branding - do not remove*/
+#topTab {
+    background: transparent;
+    color:#efefef;
+}
+
+.appTabs a span {
+    border-bottom: 1px dotted transparent;
+    padding-bottom: 1px;
+}
+
+.topTabs-compact .appTabs a span {
+    padding-bottom: 0;
+}
+
+
+.appTabs a:hover, .appTabs a:focus {
+    color:#fff;
+}
+
+.appTabs a:hover span, .appTabs a:focus span {
+    border: 0px !important;
+    color: #fff;
+
+}
+
+/*@branding - do not remove*/
+#topTabActive,
+.appTabs .active a, .appTabs .active a:hover, .appTabs .active a:focus {
+    color:#fff;
+    font-weight:bold;
+    text-shadow: 0 0 6px #000;
+    z-index:100;
+}
+
+.appTabs .active a  span, .appTabs .active a:hover span, .appTabs .active a:focus span {
+    border: 0;
+}
+
+.appTabs .active .hideoff,
+.appTabs .active a:hover .hideoff,
+.appTabs .active a:focus .hideoff,
+.toppTabs-compact .appTabs .active .hideoff,
+.toppTabs-compact .appTabs .active a:hover .hideoff,
+.toppTabs-compact .appTabs .active a:focus .hideoff {
+    bottom: 0;
+    border-left:0px solid transparent;
+    border-right:0px solid transparent;
+    border-top:0;
+    margin-left: -12px;
+    bottom: 0px;
+    line-height: 0;
+    left: 50%;
+    top: auto;
+    color: transparent;
+    font-size: 0;
+    z-index: 100;
+
+}
+
+.topTabs-compact .appTabs .active .hideoff {
+    display: none;
+}
+
+.topTabs-compact .appTabs .active .hideoff,
+.topTabs-compact .appTabs .active a:hover .hideoff,
+.topTabs-compact .appTabs .active a:focus .hideoff {
+    border-width: 0 7px 7px;
+    margin-left: -7px;
+}
+
+.topTabs-compact .appTabs a,
+.topTabs-compact  .appTabs .active a:hover,
+.topTabs-compact  .appTabs .active a:focus {
+    font-size: 95%;
+    padding: 0.4em 1em .7em;
+}
+
+.appTabs a {
+    color: #cdcdcd;
+    -moz-border-radius: 0px 0px 0 0;
+    -webkit-border-radius: 0px 0px 0 0;
+    border-radius: 0px 0px 0 0;
+}
+
+.appTabs a:hover span,
+.appTabs a:focus span {
+    border-bottom: 1px double #FFF;
+}
+
+/*@branding - do not remove*/
+#topTab {
+    background: transparent;
+    color: #666;
+}
+
+.appTabs a span {
+    padding-bottom: 1px;
+    border-bottom: 0px;
+}
+
+.appTabs a:hover, .appTabs a:focus {
+    color: #666;
+}
+
+/*@branding - do not remove*/
+#topTabActive,
+.appTabs .active a, .appTabs .active a:hover, .appTabs .active a:focus {
+    font-weight: bold;
+    text-shadow: none;
+    color: #FFFFFF;
+}
+
+.appTabs td.active {
+    border-bottom: 3px solid #ECD0F1;
+}
+
+.appTabs td {
+    padding-bottom: 14px !important
+}
+
+#topTabActive, .appTabs .active a, .appTabs .active a:hover, .appTabs .active a:focus {
+    color: #fff;
+}
+
+.appTabs .active .hideoff,
+.appTabs .active a:hover .hideoff,
+.appTabs .active a:focus .hideoff,
+.toppTabs-compact .appTabs .active .hideoff,
+.toppTabs-compact .appTabs .active a:hover .hideoff,
+.toppTabs-compact .appTabs .active a:focus .hideoff {
+    border-bottom: 14px solid #fff;
+}
+
+
+/*Rounding options*/
+.round1 a {
+    -moz-border-radius:3px 3px 0 0;
+    -webkit-border-radius:3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+
+.round2 a {
+    -moz-border-radius:12px 12px 0 0;
+    -webkit-border-radius:12px 12px 0 0;
+    border-radius:12px 12px 0 0;
+}
+
+/* @end */
+
+
+/* @group TOP FRAME LINKS (HOME, HELP, LOGOUT)
+----------------------------------------------- */
+
+/*Top frame links*/
+
+.topGlobalLinks {
+    background-color: rgba(0,0,0, 0.15);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000020, endColorstr=#33000020";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000020, endColorstr=#33000020);
+}
+
+.topGlobalLinks ul {
+    z-index: 1001
+}
+
+.topGlobalLinks  ul li {
+    color: #ccc;
+    display: inline-block;
+    margin: 0  0 0 -4px;
+}
+
+.topGlobalLinks ul li:first-child {
+    margin: 0;
+}
+
+.topGlobalLinks a {
+    display: inline-block;
+    color: #ccc;
+    text-align: left;
+    padding: 3px 5px;
+    text-indent: -10000px;
+    min-width: 18px;
+    overflow: hidden;
+    background: none!important;
+}
+
+.topGlobalLinks a .link-icon {
+    background-image: url(images/utilicons_sprite_rev.png);
+    background-repeat: no-repeat;
+    display: block;
+    float: right;
+    height: 16px;
+    width: 16px;
+    overflow: hidden;
+}
+
+.topGlobalLinks .home .link-icon {
+    background-position: -129px 0
+}
+
+.topGlobalLinks .home:hover .link-icon,
+.topGlobalLinks .home:focus .link-icon {
+    background-position: -129px -16px
+}
+
+.topGlobalLinks .logout .link-icon {
+    display: none
+}
+
+.topGlobalLinks .logout {
+    text-indent: 0;
+    padding: 2px 9px;
+    width: auto!important;
+}
+
+.topGlobalLinks .help .link-icon {
+    background-position: -145px 1px
+}
+
+.topGlobalLinks .help:hover .link-icon,
+.topGlobalLinks .help:focus .link-icon  {
+    background-position: -145px 1px
+}
+
+.topGlobalLinks a:hover,
+.topGlobalLinks a:focus {
+    color: #eee;
+    background-color: rgba(0,0,0, 0.25)!important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#44000025, endColorstr=#44000025";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#44000025, endColorstr=#44000025);
+}
+
+/* @end TOP FRAME LINKS*/
+
+/* @group TOP FRAME HOT ITEMS
+----------------------------------------------- */
+
+.hotItems {
+    position: relative;
+    margin-right: 3px;
+    width: 240px;
+    min-height: 28px;
+    color: #ddd;
+    text-align: center;
+    background-color: rgba(0,0,0, 0.20);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000020, endColorstr=#33000020";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000020, endColorstr=#33000020);
+}
+
+.hotSpots {
+    max-height: 46px;
+    overflow: auto;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    padding: 3px 3px 5px;
+}
+
+.hotSpots li {
+    display: inline-block;
+    display: inline\9;/*IE8*/
+    padding: 0 0 2px;
+}
+
+.hotSpots a {
+    background: transparent;
+    color: #ddd;
+    display: inline-block;
+    padding: 0 6px 0 0;
+}
+
+.hotSpots li:after {
+    content: "\2022";
+    color: #999999;
+    position: relative;
+    right: 1px;
+}
+
+.hotSpots li:last-child:after {
+    content: none
+}
+
+.hotSpots a:hover,
+.hotSpots a:focus {
+    color: #eee;
+}
+
+/* @end TOP FRAME HOT*/
+
+/* // GLOBAL NAV // */
+/* these styles override the icons set on the Customize Brand page. This is specific to the 2012 theme */
+.bottom-buttons-home a.home {
+    background: transparent
+    url('/images/ci/mybb/mybb_nav_bottombuttons_sprite.png ') no-repeat
+    50% 6px;
+}
+
+.bottom-buttons-help a.help {
+    background: transparent
+    url('/images/ci/mybb/mybb_nav_bottombuttons_sprite.png ') no-repeat
+    50% -13px;
+}
+
+.bottom-buttons-logout a.logout {
+    background: transparent
+    url('/images/ci/mybb/mybb_nav_bottombuttons_sprite.png ') no-repeat
+    50% -33px;
+}
+
+.global-nav-bar a.logout-link, .global-nav-bar a.logout-link:hover, .global-nav-bar a.logout-link:focus {
+    background-image: url('/images/ci/mybb/mybb_nav_logout.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+.global-nav-bar a.logout-link:hover, .global-nav-bar a.logout-link:focus {
+    background-position: 50% -22px;
+}
+/* // end GLOBAL NAV // */
+
+
+#quick_links_wrap {
+    width: 20px;
+    overflow: hidden;
+}
+
+#quick_links_wrap:hover {
+    width: 100px;
+    overflow: visible;
+    background: #333;
+}
+
+#quick_links_wrap a {
+    position: absolute;
+    right: 0px;
+}
+
+#globalNavPageNavArea {
+    background:#333;
+}
+
+/* moved from theme 2106 css */
+
+.global-nav-bar-wrap {
+    background-color: #000;
+    width: 100%;
+    height: 0px;
+}
+
+.global-nav-bar {
+    margin: 0px 10px;
+}
+
+.topTabs .tabWrapper-right {
+    height: 66px;
+}
+
+.topTabs .tabWrapper-right .appTabs {
+    height: 100%;
+}
+
+/* Higher contrast outlines for dark backgorunds */
+/* manin/global navigation */
+.appTabs input:focus, .appTabs button:focus, .appTabs select:focus, .appTabs a:focus,
+/* my bb links and logout */
+.global-nav-bar input:focus, .global-nav-bar button:focus, .global-nav-bar  select:focus, .global-nav-bar  a:focus,
+/* mybb side nav */
+.mybb-tools input:focus, .mybb-tools button:focus, .mybb-tools  select:focus, .mybb-tools  a:focus,
+.mybb-div .side-nav input:focus, .mybb-div .side-nav button:focus, .mybb-div .side-nav select:focus, .mybb-div .side-nav a:focus,
+/* course menu */
+.navPalette input:focus, .navPalette button:focus, .navPalette select:focus, .navPalette a:focus,
+/* inline grading headers */
+.gradeHeader input:focus, .gradeHeader button:focus, .gradeHeader select:focus, .gradeHeader a:focus, 
+.gradingPanelHeader input:focus, .gradingPanelHeader button:focus, .gradingPanelHeader select:focus, .gradingPanelHeader a:focus,
+.inlineGrader .resizeControls input:focus, .inlineGrader .resizeControls button:focus, .inlineGrader .resizeControls select:focus, .inlineGrader .resizeControls a:focus  {
+    outline: 2px solid #e3b7eb;
+}
+
+/* @end TOP FRAME */
+
+
+@media only screen and (min-width:320px) and (max-width:1037px) {
+
+    /*hamburgers*/
+
+    .global-nav-bar-wrap { 
+        position: fixed;
+        z-index: 9009;
+    }
+    
+    #quick_links_wrap {
+        visibility: hidden;
+    }
+
+    .brandingImgWrap {
+        position: fixed;
+        width: 71px;
+        top: -3px;
+        left: 0px;
+        height: 47px !important;
+        z-index: 2000;
+    }
+
+    .brandingImgWrap img[src*="header_institution"] {
+        height: 38px;
+        width: 38px;
+        margin-left: 4px;
+    }
+
+    .brandingImgWrap img {
+        display: none;
+    }
+    
+    /*global nav*/
+
+    .global-nav-bar-wrap { 
+        position: fixed;
+        height: 35px;
+        padding-top: 9px;
+        background-color: transparent;
+    }
+
+    .mybb-shell .global-nav-bar-wrap {
+        background-color: #333;
+    }
+
+    .global-nav-bar-wrap-mobile-nav {
+        height: 33px;
+        width: auto;
+        top: 0px;
+        position: fixed;
+        visibility: visible;
+    }
+
+    .global-nav-bar {
+        position: relative;
+        width: 100%;
+        height: 44px;
+        margin: 0px;
+    }
+
+    #global-nav .nav-link.u_floatThis-right {
+        float: left;
+        width: 100%;
+        height: 75px;
+        color: transparent;
+    }
+
+
+    #global-nav .nav-link {
+        width: 30px;
+        box-sizing: border-box;
+        overflow: hidden;
+        color: transparent;
+        background: transparent;
+        box-sizing: border-box;
+        background-color: transparent;
+        padding-right: 22px;
+    }
+
+
+    #global-nav .global-top-avatar {
+        float: left;
+        height: 30px;
+        width: 30px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 49px;
+    }
+
+    #badgeTotal {
+        position: absolute;
+        top: 34px;
+        right: 43%;
+    }
+
+    .nav-link:hover, .nav-link:focus {
+        background-color: transparent;
+    }
+
+    .global-nav-bar.logout {
+        position: fixed;
+        top: 10px;
+        right: 5px;
+        height: 20px;
+        width: 30px;
+        left: auto;
+        overflow: hidden;
+    }
+
+    .global-nav-bar .logout-link {
+        width: 30px;
+        background: transparent;
+    }
+
+    .nav-link .badge {
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+
+    .global-nav-bar .badge, 
+    .side-nav .menu-icon span.badge {
+        font-size: 11px;
+        height: 12px;
+        line-height: 12px;
+        margin-left: 0px;
+        padding: 4px 3px;
+        min-width: 12px;
+        height: auto;
+    }
+
+    div#global-nav > .hideoff {
+        width: 100%;
+        height: 44px;
+        left: 0px;
+        top: 11px;
+        font-size: 16px;
+        text-align: center;
+        color: #d8d3d3;
+    }
+
+    .global-toggle {
+        display: none;
+    }
+
+    #globalNavPageNavArea {
+        height: 44px;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        z-index: 1000;
+        overflow: hidden;
+        background: #333;
+    }
+
+    #globalNavPageNavArea.main-nav-open {
+        overflow: visible;
+    }
+
+    .brandingImgWrap {
+        position: fixed;
+        width: 71px;
+        top: -3px;
+        left: 10px;
+        height: 47px !important;
+        z-index: 2000;
+    }
+
+    .brandingImgWrap img {
+        display: none;
+    }
+
+
+    .appTabs td {
+        padding-bottom: 0 !important;
+    }
+
+    .guestTbody {
+        display: table;
+        width: 100%;
+    }
+     /*top frame*/
+    .mobile-nav-menu-icon {
+        visibility: visible;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #fff;
+    }
+
+    .tabWrapper-left, 
+    .tabWrapper-center,
+    .tabWrapper-right {
+        max-height: 0px;
+        position: fixed;
+        top: 0px;
+        z-index: 9000;
+        background: #333;
+        -webkit-transition: height 300ms cubic-bezier(0.420, 0.000, 1.000, 1.000); /* Safari */
+        transition:  height 300ms cubic-bezier(0.420, 0.000, 1.000, 1.000);
+        height: 0px;
+        padding-top: 0px;
+    }
+
+    .main-nav-open .tabWrapper-left, 
+    .main-nav-open .tabWrapper-center,
+    .main-nav-open .tabWrapper-right {
+        top: 44px;
+    }
+
+    table.bouncer {
+        height: 44px;
+        background: #333;
+    }
+
+    table.bouncer td {
+        padding: 0;
+        width: 100%;
+        float: left;
+        height: 44px;
+    }
+
+    div[class^="topTabs"] div[class^="tabWrapper"]  .appTabs {
+        height: 0px;
+        max-height: 0px;
+        overflow: visible;
+        top: -1000px;
+    }
+    
+    .appTabs td.active {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background: #333;
+    }
+
+    .mobile-menu-indicator-arrow {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7px 7px 7px 7px;
+        border-color: #fff transparent transparent transparent;
+        position: absolute;
+        margin: auto;
+        top: 33px;
+        left: 50%;
+    }
+
+    .main-nav-open .mobile-menu-indicator-arrow {
+        visibility: hidden;
+    }
+
+    .appTabs td.active a {
+        padding-bottom: 7px;
+        position: relative;
+    }
+
+    /* for mybb pages */
+    .mybb-shell .appTabs td:first-of-type {
+       height: 44px;
+    }
+
+    .mybb-shell .appTabs td a:first-of-type {
+        color: #fff;
+        font-weight: bold;
+        z-index: 100;
+        font-weight: normal;
+        padding-bottom: 13px;
+        padding-top: 19px;
+    }
+    
+    .paneTabs ul {
+        margin-left: 0px;
+    }
+
+    .paneTabs ul li:first-of-type {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+        overflow: hidden;
+    }
+
+    .flyout-menu {
+        top: 47px;
+        width: 100%;
+        left: 0px;
+        position: fixed;
+        z-index: 1001;
+    }
+
+    #flyoutMenuContent .mybb-tools {
+        width: 15%;
+    }
+
+    #flyoutMenuContent .accordion-wrapper {
+        width: 85%;
+    }
+
+    #global-list-tools {
+        margin: auto;
+    }
+
+    .mybb-shell .topTabs-compact {
+        height: 40px;
+    }
+
+    .mybb-shell div[class^="tabWrapper"]  {
+        padding-top: 2px;
+    }
+
+    #globalNavPageContentArea {
+        top: 44px;
+    }
+
+    #paneTabs {
+        visibility: hidden;
+    }
+
+    .hiddenTabsLink {
+        visibility: hidden;
+        height: 0px;
+    }
+
+    /* open system menu */
+
+    .main-nav-open table.bouncer,
+    .main-nav-open table.bouncer td {
+        height: 667px;
+    }
+
+    .main-nav-open  div[class^="topTabs"] div[class^="tabWrapper"]  .appTabs {
+        height: auto;
+        visibility: visible;
+        float: none;
+        min-width: 100%;
+    }
+    
+    .main-nav-open  div[class^="topTabs"] div[class^="tabWrapper"] {
+        height: 667px;
+        max-height: 667px;
+        overflow-y: auto;
+        padding: 0px;
+        background: transparent;
+        width: 100%;
+    }
+
+
+    .main-nav-open  div[class^="topTabs"] div[class^="tabWrapper"] .appTabs {
+        height: auto;
+        background-color: #333;
+        /*box-shadow: 0px 0px 9px 3px #666; */
+        top: 0px;
+    }
+
+    .main-nav-open table.bouncer .appTabs td {
+        position: relative;
+        border-bottom: 1px solid #999;
+        height: auto;
+    }
+
+    .main-nav-open .appTabs td.active {
+        position: relative;
+    }
+
+    .main-nav-open .appTabs td a {
+        padding-bottom: 20px;
+        font-size: 16px;
+        height: 22px;
+        text-shadow: none;
+        padding-top: 12px;
+    }
+
+    .main-nav-open .appTabs td ul a {
+        padding-bottom: 10px;
+        font-size: 13px;
+        text-shadow: none;
+    }
+
+    .main-nav-open table.bouncer .appTabs td.active {
+        border-bottom: 1px solid #c56fd5;
+    }
+
+   .main-nav-open table.bouncer .appTabs td.active ul a {
+        border-bottom: 0px;
+   }
+
+    .main-nav-open #paneTabs {
+        visibility: visible;
+        float: left;
+        width: 100%;
+        display: block;
+        background-color: #333;
+    }
+
+    .main-nav-open #paneTabs li {
+        width: 100%;
+        float: left;
+        display: block;
+    }
+
+    .main-nav-open #paneTabs .more li:first-of-type {
+        visibility: visible;
+        height: auto;
+    }
+
+    .main-nav-open .appTabs .hiddenTabsLink {
+        height: 0px;
+        padding: 0px;
+    }
+
+    ul#overflowULId {
+        display: block;
+        position: relative;
+    }
+
+    ul#overflowULId {
+        display: block;
+        position: relative;
+        background: #333;
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+        float: left;
+        width: 100%;
+        top: 0px;
+    }
+
+   .main-nav-open .nav .sub ul li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: #fff !important;
+        padding-left: 0px;
+        font-weight: lighter;
+        font-size: 13px;
+    }
+
+    .mybb-tools li.risktracker a {
+        height: auto;
+        width: auto;
+    }
+
+}
+
+/*Tablet Styles*/
+@media only screen and (min-width:668px) and (max-width:1037px) {
+    .topTabs { 
+        padding-top: 20px;
+    }
+
+    .brandingImgWrap {
+        height: 0px;
+    }
+
+     .global-nav-bar.logout {
+        top: 5px;
+
+    }
+}
+
+/*hamburger css */
+
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+ 
+.hamburger {
+    padding: 11px 0px 0px 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+}
+
+.hamburger:hover {
+    opacity: 0.7;
+}
+
+.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: "";
+    display: block;
+}
+
+.hamburger-inner::before {
+    top: -7px;
+}
+
+.hamburger-inner::after {
+    bottom: -7px;
+}
+
+
+/*
+   * Squeeze
+   */
+
+.hamburger--squeeze .hamburger-inner {
+    transition-duration: 0.075s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--squeeze .hamburger-inner::before {
+    transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+}
+
+.hamburger--squeeze .hamburger-inner::after {
+    transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--squeeze.is-active .hamburger-inner {
+    transform: rotate(45deg);
+    transition-delay: 0.12s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--squeeze.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+}
+
+.hamburger--squeeze.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+

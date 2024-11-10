@@ -1,0 +1,310 @@
+/* Assignment inline-grading page (Instructor) */
+.attemptContent a.videoIntegrationLinkAddRecording, .attemptContent a.videoIntegrationLinkViewRecording {
+  position: absolute;
+  bottom: 9px;
+  right: 40px;
+  color: #444;
+  text-decoration: none;
+}
+
+.attemptContent a.videoIntegrationLinkAddRecording.hide, .attemptContent a.videoIntegrationLinkViewRecording.hide {
+  display: none;
+}
+
+/* MyGrades (Student) */
+.cell.grade a.videoIntegrationLinkViewRecording {
+  display: inline !important; /* TODO the css for the the grade cell needs adjustment */
+  font-size: 16px !important; /* TODO the css for the the grade cell needs adjustment */
+  position: relative;
+  top: -2px;
+  text-decoration: none;
+}
+
+/* Common */
+a.videoIntegrationLinkAddRecording i.fa, a.videoIntegrationLinkViewRecording i.fa {
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+a.videoIntegrationLinkAddRecording i.fa-microphone::before {
+  content: "\f130";
+  padding: 0px 5px;
+}
+
+a.videoIntegrationLinkViewRecording i.fa.fa-video-camera::before {
+  content: "\f03d";
+  padding: 0px 5px;
+}
+
+/* Show a mouse pointer when hovering over a Video Integration embedded link in VTBE text to indicate the image is clickable. */
+img[data-bbtype='collab_video'] {
+  cursor: pointer;	
+}
+
+.video-integration {
+  background: #f8f8f8;
+  min-height: 0px;
+}
+
+.video-integration, 
+.video-integration body,
+.video-integration .locationPane,
+.video-integration .contentPaneWide,
+.video-integration .contentBox,
+.video-integration .container {
+   max-height: 700px;
+ }
+
+ .edit-video-integration.video-integration, 
+ .edit-video-integration.video-integration body,
+ .edit-video-integration.video-integration .locationPane,
+ .edit-video-integration.video-integration .contentPaneWide,
+ .edit-video-integration.video-integration .contentBox,
+ .edit-video-integration.video-integration .container {
+  min-height: 0;
+ }
+
+.video-integration .locationPane {
+  margin-top: 0px;
+}
+
+.video-integration .contentBox {
+  position: relative;
+  top: 20px;
+  min-height: 100px;
+}
+
+.video-integration .contentBox .container {
+  padding: 20px;
+  border: 1px solid #cdcdcd;
+  margin: auto;
+}
+
+.edit-video-integration .contentBox .container  {
+  padding-right: 30px;
+}
+
+.video-integration .contentPaneWide {
+  max-height: 600px;
+}
+
+.video-integration #insertLinkId {
+  padding: 6px 16px 7px;
+  float: right;
+  margin-top: 20px;
+}
+
+/* meta data view */
+.video-info-container {
+  display: inline-block;
+  position: relative;
+  top: -8px;
+}
+
+#videoInfoHeader {
+  border: 1px solid #d3d3d3;
+  width: 100%;
+  padding: 10px 0px 0px 5px;
+  margin-bottom: 12px;
+}
+
+div#videoInfoHeader {}
+
+div#videoInfoHeader {}
+
+#videoNameId {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#videoImageId {
+  height: 35px;
+  width: 35px;
+}
+
+#videoInfoId input {
+  border-radius: 3px;
+  width:100%;
+  padding: 5px 0px 5px 5px;
+}
+
+#videoInfoId input:focus {
+  border: 1px solid #c56fd5; /* //TODO discuss if we want to make this a global style? */
+}
+
+#videoDurationId {
+  float: left;
+  clear: both;
+}
+
+#videoTitle,
+#videoAltText {
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#videoTitle:before,
+#videoAltText:before {
+    content: "*";
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 1px;
+    color: #FF8000;
+}
+
+#videoInfoId #insertLinkId {
+  position: relative;
+  right: -5px;
+}
+
+@media screen and (max-width: 1300px) and (min-height 700px) {
+  .video-integration, 
+  .video-integration body,
+  .video-integration .locationPane,
+  .video-integration .contentPaneWide,
+  .video-integration .contentBox,
+  .video-integration .container {
+   max-height: 700px;
+ }
+}
+
+@media screen and (max-height: 650px) {
+  .video-integration, 
+  .video-integration body,
+  .video-integration .locationPane,
+  .video-integration .contentPaneWide,
+  .video-integration .contentBox,
+  .video-integration .container {
+    max-height: 572px;
+ }
+
+ .video-integration .container {
+   max-width: 960px;
+ }
+}
+
+@media screen and (max-height: 600px) {
+  .video-integration, 
+  .video-integration body,
+  .video-integration .locationPane,
+  .video-integration .contentPaneWide,
+  .video-integration .contentBox,
+  .video-integration .container {
+    max-height: 500px;
+ }
+
+ .video-integration .container {
+   max-width: 800px;
+ }
+}
+
+@media screen and (max-height: 500px) {
+  .video-integration, 
+  .video-integration body,
+  .video-integration .locationPane,
+  .video-integration .contentPaneWide,
+  .video-integration .contentBox,
+  .video-integration .container {
+    max-height: 400px;
+    min-width: 300px;
+ }
+
+ .video-integration .container {
+   max-width: 700px;
+ }
+}
+
+@media screen and (max-height: 450px) {
+  .video-integration, 
+  .video-integration body,
+  .video-integration .locationPane,
+  .video-integration .contentPaneWide,
+  .video-integration .contentBox,
+  .video-integration .container {
+    max-height: 400px;
+    min-width: 300px;
+ }
+
+ .video-integration .container {
+   max-width: 640px;
+ }
+}
+
+@media screen and (max-height: 420px) {
+  .video-integration, 
+  .video-integration body,
+  .video-integration .locationPane,
+  .video-integration .contentPaneWide,
+  .video-integration .contentBox,
+  .video-integration .container {
+    max-height: 328px;
+    min-width: 300px;
+ }
+
+ .video-integration .container {
+   max-width: 576px;
+ }
+}
+
+
+@media screen and (max-height: 400px) {
+  .video-integration, 
+  .video-integration body,
+  .video-integration .locationPane,
+  .video-integration .contentPaneWide,
+  .video-integration .contentBox,
+  .video-integration .container {
+    max-height: 320px;
+    max-width: 600px;
+    margin: auto;
+ }
+ .video-integration .container {
+   max-width: 600px;
+ }
+}
+
+@media screen and (max-height: 370px) {
+  .video-integration, 
+  .video-integration body,
+  .video-integration .locationPane,
+  .video-integration .contentPaneWide,
+  .video-integration .contentBox,
+  .video-integration .container {
+    max-height: 300px;
+    max-width: 600px;
+    margin: auto;
+ }
+
+ .video-integration .container {
+   max-width: 500px;
+ }
+}
+
+@media screen and (max-height: 350px) {
+  .video-integration, 
+  .video-integration body,
+  .video-integration .locationPane,
+  .video-integration .contentPaneWide,
+  .video-integration .contentBox,
+  .video-integration .container {
+    max-height: 270px;
+    max-width: 600px;
+    margin: auto;
+ }
+
+ .video-integration .container, 
+ .video-integration #containerDiv {
+   max-width: 440px;
+   margin: 0px auto;
+ }
+}
+
+@media screen and (max-width: 736px) and (min-width: 0) {
+
+  .video-integration #containerdiv {
+    padding: 20px;
+    margin: auto;
+  }
+}
