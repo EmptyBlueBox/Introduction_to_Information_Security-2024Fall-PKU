@@ -2,6 +2,12 @@
 *.pdf
 *.ppt
 *.pptx
+*.zip
+!lab1.zip
+!lab2.zip
+
+# Python
+*.pyc
 
 # Exempted Files
 !Homework/**/参考答案/**
