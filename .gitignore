@@ -1,16 +1,23 @@
 # Binary
-*.pdf
 *.ppt
 *.pptx
 *.zip
-!lab1.zip
-!lab2.zip
+
+# Textbook
+Textbook
+
+# Slide
+Slide
+
+# Resource
+Resource
+
+# 实验环境及说明
+实验环境及说明.pdf
+知行实验室-普通用户（学生）操作手册.pdf
 
 # Python
 *.pyc
-
-# Exempted Files
-!Homework/**/参考答案/**
 
 # MacOS
 .DS_Store
