@@ -11,3 +11,5 @@ Course Score Composition:
 * 期末笔试（70%）
 
 Welcome to my [Course Review](https://www.lyt0112.com/blog/course_review-zh) !
+
+My [OCR Tool](https://github.com/ocrmypdf/OCRmyPDF) for this textbook.
