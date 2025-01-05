@@ -1,9 +1,9 @@
 # Introduction to Information Security Repository
 
-Course: Introduction to Information Security
-Lecturer: Prof. Zhao Wang
-Year: 2024 Fall
-Department: School of Computer Science and Engineering, PKU
+- Course: Introduction to Information Security
+- Lecturer: Prof. Zhao Wang
+- Year: 2024 Fall
+- Department: School of Computer Science and Engineering, PKU
 
 ## Contains
 
