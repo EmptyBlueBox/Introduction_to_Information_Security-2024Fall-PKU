@@ -5,6 +5,8 @@
 - Year: 2024 Fall
 - Department: School of EECS, PKU
 
+Welcome to my [Course Review](https://www.lyt0112.com/blog/course_review-zh) !
+
 ## Contains
 
 1. My homework solutions.
@@ -23,8 +25,6 @@
   - 随堂考勤（Attendance）
 - 期末笔试（70%）
 
-## Others
-
-Welcome to my [Course Review](https://www.lyt0112.com/blog/course_review-zh) !
+## Useful Tools
 
 My [OCR Tool](https://github.com/ocrmypdf/OCRmyPDF) for this textbook.
